@@ -1,0 +1,9 @@
+Hello Dear Reader,
+
+Unfortuantly I got a new computer shortly 
+after finishing my college Python class (CSC-165), and the files got corupted
+beyond repair. So all I was able to recover was my Yathzee project, this was one 
+of the final projects in the class!
+
+I wish I could show more of my coding progress and journey in Python,
+Josh

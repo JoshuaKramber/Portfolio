@@ -1,0 +1,25 @@
+Develop the play_yahtzee.py file so that it implements a playable version of Yahtzee. In general, the game will allow multiple players and keep a scorecard for each. Every player has 13 rolls, and at each roll, the player must decide how to score that roll. Once everyone has rolled, the points are totaled and the winner is announced.
+
+You will use a NESTED DICTIONARY in this assignment. The "players" dictionary is keyed by each player's name and the value is a "scorecard" dictionary. The "scorecard" dictionary is keyed by scoring categories (e.g. "Ones" or "Sm Straight") and the value is the player's current score. All scores should be initialized to "None".
+
+1. Modify make_scorecard to make a dictionary rather than a list.
+
+2. Determine how to present scoring options to the user. You should display both the current scorecard and all possible scoring options given the current roll.
+
+3. Develop select_score so that it presents the options to the user, gets user input (until it is a valid input), and returns the option and score.
+
+4. Develop initialize_game() as described in the function in play_yahtzee.py
+
+5. Develop play_game() as described in the function in play_yahtzee.py
+
+Below are all optional.
+
+6. OPTIONAL EXTRAs: In Yahtzee, a player can get bonus points for rolling multiple Yahtzee's in a single game. It is scored normally AND the player gets an extra 50 points. You can incorporate this into the game.
+
+7. OPTIONAL EXTRAs: Once the upper half of the scorecard is complete, if the player scores above 63, they get a bonus of 35 points. You can incorporate this into the game.
+
+8. OPTIONAL EXTRAs: There are die faces that you can print (they are very tiny, so not great, but kind of fun). Try the print statement below:
+print(u'\u2680', u'\u2681', u'\u2682', u'\u2683', u'\u2684', u'\u2685')
+You can always display to the user their roll with the die instead of numbers.
+
+9. OPTIONAL EXTRAs: Use the example dice.py to incorporate a graphical interface for dice rolling. Regardless, you should run that module and see how it works -- fun!

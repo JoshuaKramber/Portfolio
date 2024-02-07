@@ -1,0 +1,10 @@
+#1 Worst case for find(T value) would be at the bottom of the tree or not in the tree at all because it has to search through the entire length of the tree would still logarithmic.
+Worst case for find(T value, Comparator<T> comp)  would be at the bottom of the tree or not in the tree because it still has to search through the entire sides which would be logarithmic.
+
+#2 Best case for add(T value) would be adding at the root which is always constant
+Worst case for add(T value) would be adding at the bottom of tree because it has to go all the way down the tree which would be logarithmic
+
+#3 for an array implementation we would need to know the size of the array that we would have since arrays are not muttable
+List implementation is stored in memory differently but we can also add nodes wherever we need, lists are muttable
+
+#4 I think that since we need to have a sorted output we would want a sorted binary tree and since we don't know the size of the database we would want a sorted list so we can add peoples info in wherever we need

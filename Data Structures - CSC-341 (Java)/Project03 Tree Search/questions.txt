@@ -1,0 +1,4 @@
+1. By using the dummy node, we can more easily pop and push things from the list along with easier iteration.
+2. A circular buffer is good in an array because of the more efficient looping. In a list a circular buffer is not a good idea because it is super easy to create infinite loops on accident.
+3. Stack visited 235 in DFS compared to the Queues 466 in BFS. DFS is better in this situation because it goes down to the more filled in boards first which gets us the solution faster. BFS is less efficient in this regard because it essentially sweeps across the node tree and gets to the filled in boards last.
+4. interfaces are nice because they are kinda like a template for any class that impliments them. Each class mush have the methods that the interface class has. This allows for better implimentation because each class is based on the same interface so in a sense they are related/similar

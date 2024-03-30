@@ -1,0 +1,66 @@
+---
+title: "Homework23"
+format: html
+editor: visual
+---
+
+## Homework 23
+
+```{r}
+library(tidyverse)
+library(mosaicData)
+
+?mosaicData::HELPrct
+mosaicData::HELPrct |> glimpse()
+
+
+data <- mosaicData::HELPrct
+```
+
+Question 1a:
+
+The following variables are: age, anysubstatus, anysub, cesd, d1, daysanysub, dayslink, drugrisk, e2b, female, sex, g1b, homeless, i1, i2, id, indtot, linkstatus, link, mcs, pcs, pss_fr, racegrp, satreat, sexrisk, substance, treat, avg_drinks, max_drinks, hospitalizations
+
+Seems like this data set contains information about drinks, drugs and the hospitalizations surrounding them related to addiction.
+
+Question 1b:
+
+```{r}
+is.numeric(mosaicData::HELPrct$treat)
+#idk what treat means even by reading the description of the data set or the column
+is.numeric(mosaicData::HELPrct$max_drinks)
+#this is the number of the most drinks that the person had
+```
+
+Question 1c:
+
+```{r}
+
+out <- vector("numeric", dim(data)[2])
+
+for (i in seq_along(data)) {
+  out[i] <- mean(data[[i]])
+}
+
+dim(data)[2]
+mydata <- summary(data, na.rm=TRUE)
+
+mydata
+```
+
+Question 1d:
+
+```{r}
+data2 <- mosaicData::HELPrct |> group_by(sex) |> nest()
+
+out2 <- vector("numeric", dim(data2)[2])
+
+for (i in seq_along(data2)) {
+  out[i] <- mean(data2[[i]])
+}
+
+dim(data2)[2]
+mydata2 <-  summary(data2)
+
+mydata2
+```

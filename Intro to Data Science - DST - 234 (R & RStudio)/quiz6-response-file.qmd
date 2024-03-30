@@ -1,0 +1,101 @@
+---
+title: "Quiz 6"
+author: "Josh, Leah, Yuva, Ariana"
+format:
+  html:
+    embed-resources: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Introduction
+You are determining the actual amount of CO2 from a gas sample that is input into a gas analyzer (I can show you the actual analyzer in my office!).  The reported value from the gas analyzer needs adjustment because of instrument calibrations.
+
+You are hired to produce code that will take an input file of known CO2 gas (called standards), develop a regression equation, and then determine the amount of CO2 in an unknown set of samples.
+
+Your tasks will be to write code in groups. What you will submit is a .qmd file (template posted on moodle) with your group work. **Only one person will submit the file per group.**
+
+
+
+Let's load up the usual packages:
+
+```{r,warning=FALSE,message=FALSE}
+library(tidyverse)
+library(broom)
+
+```
+
+
+## Question 1:
+The first file is the standards, where gas of a known concentration is injected into the analyzer. This data frame has 3 variables:
+
+ - `timepoint`:, when it was injected into the analyzer
+ - `co2`: the measured co2 at that point in time
+ - `standard_co2`: the known case concentration (in ppm) of the gas sample. This is a categorical variable with values of  100, 1000, 10000, 100000, 990000 respectively.
+
+You can read in the file with this code:
+
+```{r}
+standard_gas <- read_csv('https://raw.githubusercontent.com/jmzobitz/DST234Datasets/master/gas_standards.csv')
+```
+
+### TASKS:
+A) Using your data wrangling skills, for each value of the standards in `standard_co2`, compute the total co2 measured by the analyzer across all values of `timepoint`. Call this variable `measured_co2`. **[12 points]**
+B) With that summarized data frame you computed from Task A), compute a linear regression with the variables `measured_co2` as your predictor (`x`) and `standard_co2` as the response (`y`). Report out the coefficients from the fit.  **[8 points]**
+
+```{r}
+
+A <- standard_gas |> group_by(standard_co2) |> summarise(sum(co2))
+
+B <- lm(`sum(co2)` ~ standard_co2, data = A)
+
+tidy(B)
+
+```
+
+### Question 2:
+The second file is the unknown co2, where two soil samples were taken and injected into the analyzer. You will use the previous calibration equation to determine the actual amount of CO2 in the sample.
+
+This data frame has 3 variables:
+ - `timepoint`:, when it was injected into the analyzer
+ - `co2`: the measured co2 at that point in time
+ - `unknown`: A or B: which soil sample was taken
+
+You can read in the file with this code:
+
+```{r}
+unknown_gas <- read_csv('https://raw.githubusercontent.com/jmzobitz/DST234Datasets/master/gas_unknown.csv')
+
+```
+
+# TASKS:
+C) Using your data wrangling skills, for each `unknown` soil sample (A or B), compute the total `co2` measured by the analyzer across all timepoints. Similar to Task A) call this variable `measured_co2`. **[12 points]**
+D) Using the values of the slope and intercept from your calibration equation in Task B, predict the value of the CO2 concentration for each soil sample (A or B), using the computed value of `measured_co2` from Task C as the predictor (`x`) variable. **[8 points]**
+
+
+
+```{r}
+### TYPE CODE HERE
+C <- unknown_gas |> group_by(unknown) |> summarise(sum(co2))
+
+D <- 
+
+```
+
+
+# Question 3:
+Now that you have a working example, develop a function that takes the two data frames `standard_gas` and `unknown_gas` to predict the CO2 concentration in each sample. The idea is to have a single workflow that takes the input files and with a minimal amount of processing (i.e. you should write code that doesn't need a human to enter in values such as the slope or the intercept of your regression lines.) How you structure and compute these are up to you and your group.  **[10 points]**
+
+
+
+```{r}
+
+### TYPE YOUR CODE HERE
+compute_co2 <- function(standard_gas,unknown_gas) {
+  
+}
+
+### TEST YOUR CODE:
+compute_co2(standard_gas,unknown_gas)
+```

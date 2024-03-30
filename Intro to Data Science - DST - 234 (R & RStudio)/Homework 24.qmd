@@ -1,0 +1,58 @@
+---
+title: "Homework24"
+format: html
+editor: visual
+---
+
+Homework 24
+
+1.  I liked reading about the artificial neuro networks because it brought up connected graphs and weights which I am going through in my algorithms class right now. Completely different topic but I wonder how I could use machine learning for my weight lifting progress, because I feel like I am rather efficient with my workout but could I somehow enter my workout data into some machine learning algorithm that would predict what weights I should use in the future.
+2.  
+
+```{r}
+library(tidyverse)
+
+no_arrival <- function(X,Y){
+  nycflights13::flights |>
+  filter(dest==X,month==Y) |>
+  group_by(day) |> 
+  summarize(tot=sum(is.na(arr_delay)))
+}
+
+no_arrival("ATL",4)
+
+```
+
+3.  I chose to try to link the file to the web instead of reading it in. I think this is what you wanted..???
+
+```{{r}}
+library(tidyverse)
+library(mosaic)
+library(broom)
+library(zoo)
+
+fit_lakes <- function(url) {
+  lake_data <- read.csv(url, sep = "")
+  fit_data <- lake_data |>
+    map_dfr(mosaic::fav_stats) |>
+    mutate(year = names(lake_data),
+         year = str_extract(year, pattern = "(?<=X)[:digit:]+"),
+         year = as.numeric(year)) |>
+    map_df(zoo::rollmean, k = 5) |>
+    select(-n, -missing) |>
+    pivot_longer(cols = c("min":"sd"), names_to = "fav_stat", values_to = "value") |>
+    group_by(fav_stat) |>
+    nest() |>
+    mutate(
+      lm_fit = map(data, ~ lm(value ~ year, data = .x)),
+      lm_summary = map(lm_fit, ~ broom::tidy(.x))
+    ) |>
+    select(fav_stat, lm_summary) |>
+    unnest(cols = c(lm_summary)) |>
+    filter(term == "year")
+
+  return(fit_data)
+}
+
+fit_lakes("https://www.glerl.noaa.gov/data/ice/glicd/daily/sup.txt")
+```

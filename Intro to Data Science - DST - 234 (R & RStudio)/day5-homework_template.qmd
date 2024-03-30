@@ -1,0 +1,41 @@
+---
+title: "THIS IS YOUR TITLE"
+author: "ENTER YOUR NAME HERE"
+date: "2023-09-13"
+format:
+  html:
+    embed-resources: true
+---
+
+```{r}
+#| echo: false
+
+library(mdsr)
+library(tidyverse)
+```
+
+## Problem 3
+Download and save the file `memorization_data.csv` located on the moodle website. These data represent the time it takes to memorize a list of 20 words across 10 different rounds with 12 different participants, with the following columns:
+
+- Round: Stage of the memorization (1 - 10)
+- Words: Number of words memorized.
+- Student: ID for the given student (1 - 12)
+- Gender: Gender identity of student (M = male, F = female, NB = nonbinary)
+- Languages: Number of languages student speaks
+
+Using this quatro file, import this csv file into R and construct an informative data visualization from the data. 
+
+**Note:** this dataset contains some quantitative and categorical data, so be creative in how you set up the visualization.
+
+Type your response here, embedding documented code in the chunk below
+
+```{r}
+memorization_data <- read_csv('memorization_data.csv')
+
+# Now make your plot!
+```
+```{r}
+ggplot(data = memorization_data, aes(x= Words, y= Round, color = Gender, shape = Gender)) +
+  geom_point() + ggtitle('Words versus Rounds split by Gender')
+```
+

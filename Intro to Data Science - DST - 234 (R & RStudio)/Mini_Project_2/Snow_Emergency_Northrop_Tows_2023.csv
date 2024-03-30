@@ -1,0 +1,466 @@
+﻿X,Y,OBJECTID,Snow_Emerg,Snow_Eme_1,Snow_Eme_2,Key_,Call_Taken,Customer,Location,Latitude,Longitude,Ward,Neighborho,Community,Day,Tow_Zone
+-93.26217,44.9405100000001,1,Northrop,2022-2023,4,1,2023/01/04 00:00:00+00,Snow Emergency,"3427 Chicago ave so,Minneapolis,MN",44.94051,-93.26217,9,Powderhorn Park,Powderhorn,1,6
+-93.2769499999999,44.9635200000001,2,Northrop,2022-2023,4,2,2023/01/04 00:00:00+00,Snow Emergency,"1910 1st ave s,Minneapolis,MN",44.96352,-93.27695,6,Steven's Square - Loring Heights,Central,1,3
+-93.24449,44.98943,3,Northrop,2022-2023,4,3,2023/01/04 00:00:00+00,Snow Emergency,"511 8TH ST SE,Minneapolis,MN",44.98943,-93.24449,3,Marcy Holmes,University,1,4
+-93.287048,45.0398070000001,4,Northrop,2022-2023,4,4,2023/01/04 00:00:00+00,Snow Emergency,"4642 LYNDALE AVE N,Minneapolis,MN",45.039807,-93.287048,4,Camden Industrial,Camden,1,1
+-93.2867899999999,45.0393,5,Northrop,2022-2023,4,5,2023/01/04 00:00:00+00,Snow Emergency,"4626 LYNDALE AVE N,Minneapolis,MN",45.0393,-93.28679,4,Camden Industrial,Camden,1,1
+-93.2764099999999,44.9643800000001,6,Northrop,2022-2023,4,6,2023/01/04 00:00:00+00,Snow Emergency,"1821 1ST AVE S,Minneapolis,MN",44.96438,-93.27641,6,Steven's Square - Loring Heights,Central,1,3
+-93.27638,44.96624,7,Northrop,2022-2023,4,7,2023/01/04 00:00:00+00,Snow Emergency,"1701 1ST AVE S,Minneapolis,MN",44.96624,-93.27638,6,Steven's Square - Loring Heights,Central,1,3
+-93.276405,44.9656390000001,8,Northrop,2022-2023,4,8,2023/01/04 00:00:00+00,Snow Emergency,"1751 1st Ave s,Minneapolis,MN",44.965639,-93.276405,6,Steven's Square - Loring Heights,Central,1,3
+-93.2762,44.96353,9,Northrop,2022-2023,4,9,2023/01/04 00:00:00+00,Snow Emergency,"1911 1st ave s,Minneapolis,MN",44.96353,-93.2762,6,Steven's Square - Loring Heights,Central,1,3
+-93.262785,44.948202,10,Northrop,2022-2023,4,10,2023/01/04 00:00:00+00,Snow Emergency,"3000 Chicago Ave S,Minneapolis,MN",44.948202,-93.262785,9,Central,Powderhorn,1,5
+-93.30177,44.9458900000001,11,Northrop,2022-2023,4,11,2023/01/04 00:00:00+00,Snow Emergency,"3117 IRVING AVE S,Minneapolis,MN",44.94589,-93.30177,10,East Bde Maka Ska,Calhoun Isle,1,5
+-93.26211,44.9354900000001,12,Northrop,2022-2023,4,12,2023/01/04 00:00:00+00,Snow Emergency,"3715 Chicago Ave S,Minneapolis,MN",44.93549,-93.26211,9,Powderhorn Park,Powderhorn,1,6
+-93.27673,44.96248,13,Northrop,2022-2023,4,13,2023/01/04 00:00:00+00,Snow Emergency,"1916 1AV s,Minneapolis,MN",44.96248,-93.27673,10,Whittier,Powderhorn,1,3
+-93.277815,44.9224520000001,14,Northrop,2022-2023,4,14,2023/01/04 00:00:00+00,Snow Emergency,"4443 Nicollet ave ,Minneapolis,MN",44.922452,-93.277815,8,King Field,Southwest,1,5
+-93.2561269999999,44.987938,15,Northrop,2022-2023,4,15,2023/01/04 00:00:00+00,Snow Emergency,"1 UNIVERSITY AVE SE,Minneapolis,MN",44.987938,-93.256127,3,Nicollet Island - East Bank,University,1,4
+-93.2769499999999,44.9635200000001,16,Northrop,2022-2023,4,16,2023/01/04 00:00:00+00,Snow Emergency,"1910 1 av s,Minneapolis,MN",44.96352,-93.27695,6,Steven's Square - Loring Heights,Central,1,3
+-93.24699,44.9840600000001,17,Northrop,2022-2023,4,17,2023/01/04 00:00:00+00,Snow Emergency,"611 UNIVERSITY AVE SE,Minneapolis,MN",44.98406,-93.24699,3,Marcy Holmes,University,1,4
+-93.24699,44.9840600000001,18,Northrop,2022-2023,4,18,2023/01/04 00:00:00+00,Snow Emergency,"611 UNIVERSITY AVE SE,Minneapolis,MN",44.98406,-93.24699,3,Marcy Holmes,University,1,4
+-93.2420999999999,44.8536800000001,19,Northrop,2022-2023,4,19,2023/01/04 00:00:00+00,Snow Emergency,"17011st Ave s ,Minneapolis,MN",44.85368,-93.2421,0, , ,1,0
+-93.30177,44.9461400000001,20,Northrop,2022-2023,4,20,2023/01/04 00:00:00+00,Snow Emergency,"3109 IRVING AVE S,Minneapolis,MN",44.94614,-93.30177,10,East Bde Maka Ska,Calhoun Isle,1,5
+-93.277552,44.963785,21,Northrop,2022-2023,4,21,2023/01/04 00:00:00+00,Snow Emergency,"13 19th st e,Minneapolis,MN",44.963785,-93.277552,6,Steven's Square - Loring Heights,Central,1,3
+-93.27726,44.9642700000001,22,Northrop,2022-2023,4,22,2023/01/04 00:00:00+00,Snow Emergency,"20 19th st e,Minneapolis,MN",44.96427,-93.27726,6,Steven's Square - Loring Heights,Central,1,3
+-93.277544,44.963785,23,Northrop,2022-2023,4,23,2023/01/04 00:00:00+00,Snow Emergency,"15 19th st e,Minneapolis,MN",44.963785,-93.277544,6,Steven's Square - Loring Heights,Central,1,3
+-93.277815,44.9224520000001,24,Northrop,2022-2023,4,24,2023/01/04 00:00:00+00,Snow Emergency,"4443 Nicollet ave ,Minneapolis,MN",44.922452,-93.277815,8,King Field,Southwest,1,5
+-93.25281,44.9397300000001,25,Northrop,2022-2023,4,25,2023/01/04 00:00:00+00,Snow Emergency,"3446 bloomington ave s,Minneapolis,MN",44.93973,-93.25281,9,Powderhorn Park,Powderhorn,1,6
+-93.2772899999999,44.9642400000001,26,Northrop,2022-2023,4,26,2023/01/04 00:00:00+00,Snow Emergency,"8 19TH ST E ,Minneapolis,MN",44.96424,-93.27729,6,Steven's Square - Loring Heights,Central,1,3
+-93.252555,44.9402040000001,27,Northrop,2022-2023,4,27,2023/01/04 00:00:00+00,Snow Emergency,"3430 Bloomington ave so,Minneapolis,MN",44.940204,-93.252555,9,Powderhorn Park,Powderhorn,1,6
+-93.29176,45.03761,28,Northrop,2022-2023,4,28,2023/01/04 00:00:00+00,Snow Emergency,"4531 BRYANT ANE N,Minneapolis,MN",45.03761,-93.29176,4,Lind - Bohanon,Camden,1,1
+-93.2918,45.0397300000001,29,Northrop,2022-2023,4,29,2023/01/04 00:00:00+00,Snow Emergency,"4643 BRYANT AVE N,Minneapolis,MN",45.03973,-93.2918,4,Lind - Bohanon,Camden,1,1
+-93.301975,44.9456660000001,30,Northrop,2022-2023,4,30,2023/01/04 00:00:00+00,Snow Emergency,"3123 IRVING AVE S,Minneapolis,MN",44.945666,-93.301975,10,East Bde Maka Ska,Calhoun Isle,1,5
+-93.24364,44.96362,31,Northrop,2022-2023,4,31,2023/01/04 00:00:00+00,Snow Emergency,"905 20TH AVE S,Minneapolis,MN",44.96362,-93.24364,6,Seward,Longfellow,1,4
+-93.276415,44.9640910000001,32,Northrop,2022-2023,4,32,2023/01/04 00:00:00+00,Snow Emergency,"1895 1st ave s ,Minneapolis,MN",44.964091,-93.276415,6,Steven's Square - Loring Heights,Central,1,3
+-93.2775599999999,44.963785,33,Northrop,2022-2023,4,33,2023/01/04 00:00:00+00,Snow Emergency,"11 19TH ST E ,Minneapolis,MN",44.963785,-93.27756,6,Steven's Square - Loring Heights,Central,1,3
+-93.2847609999999,44.9682280000001,34,Northrop,2022-2023,4,34,2023/01/04 00:00:00+00,Snow Emergency,"412 15th st w ,Minneapolis,MN",44.968228,-93.284761,7,Loring Park,Central,1,3
+-93.29103,45.0375000000001,35,Northrop,2022-2023,4,35,2023/01/04 00:00:00+00,Snow Emergency,"4526 Bryant Ave n,Minneapolis,MN",45.0375,-93.29103,4,Lind - Bohanon,Camden,1,1
+-93.26211,44.9352700000001,36,Northrop,2022-2023,4,36,2023/01/04 00:00:00+00,Snow Emergency,"3721 Chicago Ave S ,Minneapolis,MN",44.93527,-93.26211,9,Powderhorn Park,Powderhorn,1,6
+-93.2762,44.9645600000001,37,Northrop,2022-2023,4,37,2023/01/04 00:00:00+00,Snow Emergency,"1815 1st ave s,Minneapolis,MN",44.96456,-93.2762,6,Steven's Square - Loring Heights,Central,1,3
+-93.27752,44.9389200000001,38,Northrop,2022-2023,4,38,2023/01/04 00:00:00+00,Snow Emergency,"3517 NICOLLET AVE,Minneapolis,MN",44.93892,-93.27752,8,Lyndale,Powderhorn,1,5
+-93.2884099999999,45.0218300000001,39,Northrop,2022-2023,4,39,2023/01/04 00:00:00+00,Snow Emergency,"3653 Lyndale ave n,Minneapolis,MN",45.02183,-93.28841,4,McKinley,Camden,1,1
+-93.277568,44.963785,40,Northrop,2022-2023,4,40,2023/01/04 00:00:00+00,Snow Emergency,"9 19th st e,Minneapolis,MN",44.963785,-93.277568,6,Steven's Square - Loring Heights,Central,1,3
+-93.27728,44.9642700000001,41,Northrop,2022-2023,4,41,2023/01/04 00:00:00+00,Snow Emergency,"10 19th st e,Minneapolis,MN",44.96427,-93.27728,6,Steven's Square - Loring Heights,Central,1,3
+-93.25203,44.9383100000001,42,Northrop,2022-2023,4,42,2023/01/04 00:00:00+00,Snow Emergency,"3541 Bloomington Ave S,Minneapolis,MN",44.93831,-93.25203,9,Powderhorn Park,Powderhorn,1,6
+-93.243905,44.963733,43,Northrop,2022-2023,4,43,2023/01/04 00:00:00+00,Snow Emergency,"917 20TH AVE S,Minneapolis,MN",44.963733,-93.243905,6,Seward,Longfellow,1,4
+-93.277815,44.9224520000001,44,Northrop,2022-2023,4,44,2023/01/04 00:00:00+00,Snow Emergency,"4443 Nicollet ave ,Minneapolis,MN",44.922452,-93.277815,8,King Field,Southwest,1,5
+-93.2412219999999,44.853825,45,Northrop,2022-2023,4,45,2023/01/04 00:00:00+00,Snow Emergency,"3617 Nicolle ave s,Minneapolis,MN",44.853825,-93.241222,0, , ,1,0
+-93.27752,44.9364100000001,46,Northrop,2022-2023,4,46,2023/01/05 00:00:00+00,Snow Emergency,"3635 Nicollet ave s,Minneapolis,MN",44.93641,-93.27752,8,King Field,Southwest,1,5
+-93.27966,44.967835,47,Northrop,2022-2023,4,47,2023/01/05 00:00:00+00,Snow Emergency,"118 15th st w ,Minneapolis,MN",44.967835,-93.27966,7,Loring Park,Central,1,3
+-93.2775599999999,44.963785,48,Northrop,2022-2023,4,48,2023/01/05 00:00:00+00,Snow Emergency,"11 19TH ST E ,Minneapolis,MN",44.963785,-93.27756,6,Steven's Square - Loring Heights,Central,1,3
+-93.27753,44.93688,49,Northrop,2022-2023,4,49,2023/01/05 00:00:00+00,Snow Emergency,"3621 nicollet Avenue,Minneapolis,MN",44.93688,-93.27753,8,King Field,Southwest,1,5
+-93.2932499999999,44.9851200000001,50,Northrop,2022-2023,4,50,2023/01/05 00:00:00+00,Snow Emergency,"640 VAN WHITE MEM,Minneapolis,MN",44.98512,-93.29325,5,Sumner - Glenwood,Near North,1,1
+-93.293985,45.0057200000001,51,Northrop,2022-2023,4,51,2023/01/05 00:00:00+00,Snow Emergency,"2540 EMERSON AVE N,Minneapolis,MN",45.00572,-93.293985,5,Hawthorne,Near North,1,1
+-93.252648,44.9460240000001,52,Northrop,2022-2023,4,52,2023/01/05 00:00:00+00,Snow Emergency,"3112 Bloomington ave so,Minneapolis,MN",44.946024,-93.252648,9,Powderhorn Park,Powderhorn,1,6
+-93.241495,44.85382,53,Northrop,2022-2023,4,53,2023/01/05 00:00:00+00,Snow Emergency,"2021 9TH AVE S,Minneapolis,MN",44.85382,-93.241495,0, , ,1,0
+-93.24376,44.9637700000001,54,Northrop,2022-2023,4,54,2023/01/05 00:00:00+00,Snow Emergency,"915 20TH AVE S,Minneapolis,MN",44.96377,-93.24376,6,Seward,Longfellow,1,4
+-93.26292,44.9357800000001,55,Northrop,2022-2023,4,55,2023/01/05 00:00:00+00,Snow Emergency,"3700 Chicago Ave S ,Minneapolis,MN",44.93578,-93.26292,8,Central,Powderhorn,1,5
+-93.24361,44.96378,56,Northrop,2022-2023,4,56,2023/01/05 00:00:00+00,Snow Emergency,"2007 9TH ST S,Minneapolis,MN",44.96378,-93.24361,6,Seward,Longfellow,1,4
+-93.28364,44.968079,57,Northrop,2022-2023,4,57,2023/01/05 00:00:00+00,Snow Emergency,"328 w 15th St ,Minneapolis,MN",44.968079,-93.28364,7,Loring Park,Central,1,3
+-93.279475,44.9666760000001,58,Northrop,2022-2023,4,58,2023/01/05 00:00:00+00,Snow Emergency,"1572 LASALLE AVE,Minneapolis,MN",44.966676,-93.279475,7,Loring Park,Central,1,3
+-93.27908,44.9679800000001,59,Northrop,2022-2023,4,59,2023/01/05 00:00:00+00,Snow Emergency,"1425 LASALLE AVE ,Minneapolis,MN",44.96798,-93.27908,7,Loring Park,Central,1,3
+-93.27753,44.9370000000001,60,Northrop,2022-2023,4,60,2023/01/05 00:00:00+00,Snow Emergency,"3617 Nicollet ave ,Minneapolis,MN",44.937,-93.27753,8,King Field,Southwest,1,5
+-93.2847609999999,44.9682280000001,61,Northrop,2022-2023,4,61,2023/01/05 00:00:00+00,Snow Emergency,"412 15th ST W,Minneapolis,MN",44.968228,-93.284761,7,Loring Park,Central,1,3
+-93.2940139999999,44.989693,62,Northrop,2022-2023,4,62,2023/01/05 00:00:00+00,Snow Emergency,"1191 van white memorial blvd,Minneapolis,MN",44.989693,-93.294014,5,Near - North,Near North,1,1
+-93.2848949999999,44.9682460000001,63,Northrop,2022-2023,4,63,2023/01/05 00:00:00+00,Snow Emergency,"422 15th st w,Minneapolis,MN",44.968246,-93.284895,7,Loring Park,Central,1,3
+-93.27752,44.9389200000001,64,Northrop,2022-2023,4,64,2023/01/05 00:00:00+00,Snow Emergency,"3517 NICOLLET AVE,Minneapolis,MN",44.93892,-93.27752,8,Lyndale,Powderhorn,1,5
+-93.29365,45.00537,65,Northrop,2022-2023,4,65,2023/01/05 00:00:00+00,Snow Emergency,"2514 EMERSON AVE N,Minneapolis,MN",45.00537,-93.29365,5,Hawthorne,Near North,1,1
+-93.26319,44.93899,66,Northrop,2022-2023,4,66,2023/01/05 00:00:00+00,Snow Emergency,"3500 Chicago ave s ,Minneapolis,MN",44.93899,-93.26319,9,Central,Powderhorn,1,5
+-93.29365,45.00537,67,Northrop,2022-2023,4,67,2023/01/05 00:00:00+00,Snow Emergency,"2514 EMERSON AVE N,Minneapolis,MN",45.00537,-93.29365,5,Hawthorne,Near North,1,1
+-93.278318,44.967835,68,Northrop,2022-2023,4,68,2023/01/05 00:00:00+00,Snow Emergency,"28 15TH ST W,Minneapolis,MN",44.967835,-93.278318,7,Loring Park,Central,1,3
+-93.279475,44.960497,69,Northrop,2022-2023,4,69,2023/01/05 00:00:00+00,Snow Emergency,"2239 BLAISDELL AVE ,Minneapolis,MN",44.960497,-93.279475,10,Whittier,Powderhorn,1,3
+-93.27752,44.9364100000001,70,Northrop,2022-2023,4,70,2023/01/05 00:00:00+00,Snow Emergency,"3635 Nicollet ave s,Minneapolis,MN",44.93641,-93.27752,8,King Field,Southwest,1,5
+-93.27752,44.9389200000001,71,Northrop,2022-2023,4,71,2023/01/05 00:00:00+00,Snow Emergency,"3517 Nicollet ave s,Minneapolis,MN",44.93892,-93.27752,8,Lyndale,Powderhorn,1,5
+-93.24197,44.9641250000001,72,Northrop,2022-2023,4,72,2023/01/05 00:00:00+00,Snow Emergency,"2126 9TH ST S,Minneapolis,MN",44.964125,-93.24197,6,Seward,Longfellow,1,4
+-93.279485,44.9618070000001,73,Northrop,2022-2023,4,73,2023/01/05 00:00:00+00,Snow Emergency,"2091 blaisdell Ave ,Minneapolis,MN",44.961807,-93.279485,10,Whittier,Powderhorn,1,3
+-93.279475,44.9581030000001,74,Northrop,2022-2023,4,74,2023/01/05 00:00:00+00,Snow Emergency,"2455 BLAISDELL AVE ,Minneapolis,MN",44.958103,-93.279475,10,Whittier,Powderhorn,1,3
+-93.2628349999999,44.904119,75,Northrop,2022-2023,4,75,2023/01/05 00:00:00+00,Snow Emergency,"5450 Chicago Ave S ,Minneapolis,MN",44.904119,-93.262835,11,Page,Nokomis,1,5
+-93.279745,44.9596520000001,76,Northrop,2022-2023,4,76,2023/01/05 00:00:00+00,Snow Emergency,"2308 Blaisdell Ave S,Minneapolis,MN",44.959652,-93.279745,10,Whittier,Powderhorn,1,3
+-93.28752,44.9690650000001,77,Northrop,2022-2023,4,77,2023/01/05 00:00:00+00,Snow Emergency,"628 w 15th,Minneapolis,MN",44.969065,-93.28752,7,Loring Park,Central,1,3
+-93.2528399999999,44.90691,78,Northrop,2022-2023,4,78,2023/01/05 00:00:00+00,Snow Emergency,"5300 Bloomington Ave S ,Minneapolis,MN",44.90691,-93.25284,11,Hale,Nokomis,1,6
+-93.2937899999999,44.98569,79,Northrop,2022-2023,4,79,2023/01/05 00:00:00+00,Snow Emergency,"701 van white memorial Blvd mpls ,Minneapolis,MN",44.98569,-93.29379,5,Sumner - Glenwood,Near North,1,1
+-93.27769,44.9027100000001,80,Northrop,2022-2023,4,80,2023/01/05 00:00:00+00,Snow Emergency,"5521 NICOLLET Avenue,Minneapolis,MN",44.90271,-93.27769,11,Windom,Southwest,1,5
+-93.27841,44.9440300000001,81,Northrop,2022-2023,4,81,2023/01/05 00:00:00+00,Snow Emergency,"3218 NICOLLET AVE ,Minneapolis,MN",44.94403,-93.27841,8,Lyndale,Powderhorn,1,5
+-93.24839,44.9467500000001,82,Northrop,2022-2023,4,82,2023/01/05 00:00:00+00,Snow Emergency,"1804 31st st e,Minneapolis,MN",44.94675,-93.24839,9,Powderhorn Park,Powderhorn,1,6
+-93.27916,44.9562000000001,83,Northrop,2022-2023,4,83,2023/01/05 00:00:00+00,Snow Emergency,"2533 blaisdell Ave s,Minneapolis,MN",44.9562,-93.27916,10,Whittier,Powderhorn,1,3
+-93.24136,44.94633,84,Northrop,2022-2023,4,84,2023/01/05 00:00:00+00,Snow Emergency,"2117 31st st e,Minneapolis,MN",44.94633,-93.24136,9,Corcoran,Powderhorn,1,6
+-93.238667,44.9466850000001,85,Northrop,2022-2023,4,85,2023/01/05 00:00:00+00,Snow Emergency,"2310 31st st e ,Minneapolis,MN",44.946685,-93.238667,9,Corcoran,Powderhorn,1,6
+-93.279745,44.960019,86,Northrop,2022-2023,4,86,2023/01/05 00:00:00+00,Snow Emergency,"2308 blaisdell ave,Minneapolis,MN",44.960019,-93.279745,10,Whittier,Powderhorn,1,3
+-93.279745,44.957859,87,Northrop,2022-2023,4,87,2023/01/05 00:00:00+00,Snow Emergency,"2470 Blaisdell Ave,Minneapolis,MN",44.957859,-93.279745,10,Whittier,Powderhorn,1,3
+-93.279745,44.960019,88,Northrop,2022-2023,4,88,2023/01/05 00:00:00+00,Snow Emergency,"2308 blaisdell ave,Minneapolis,MN",44.960019,-93.279745,10,Whittier,Powderhorn,1,3
+-93.27985,44.9644400000001,89,Northrop,2022-2023,4,89,2023/01/05 00:00:00+00,Snow Emergency,"1822 LASALLE AVE ,Minneapolis,MN",44.96444,-93.27985,7,Steven's Square - Loring Heights,Central,1,3
+-93.2884099999999,45.00095,90,Northrop,2022-2023,4,90,2023/01/05 00:00:00+00,Snow Emergency,"2119 LYNDALE AVE N,Minneapolis,MN",45.00095,-93.28841,5,Hawthorne,Near North,1,1
+-93.28364,44.968079,91,Northrop,2022-2023,4,91,2023/01/05 00:00:00+00,Snow Emergency,"328 W 15TH ST,Minneapolis,MN",44.968079,-93.28364,7,Loring Park,Central,1,3
+-93.279475,44.9588420000001,92,Northrop,2022-2023,4,92,2023/01/05 00:00:00+00,Snow Emergency,"2403 BLAISDELL AVE,Minneapolis,MN",44.958842,-93.279475,10,Whittier,Powderhorn,1,3
+-93.2884099999999,45.00095,93,Northrop,2022-2023,4,93,2023/01/05 00:00:00+00,Snow Emergency,"2119 LYNDALE AVE N,Minneapolis,MN",45.00095,-93.28841,5,Hawthorne,Near North,1,1
+-93.2406819999999,44.9641140000001,94,Northrop,2022-2023,4,94,2023/01/05 00:00:00+00,Snow Emergency,"2202 9TH ST S,Minneapolis,MN",44.964114,-93.240682,6,Seward,Longfellow,1,4
+-93.278154,44.967835,95,Northrop,2022-2023,4,95,2023/01/05 00:00:00+00,Snow Emergency,"14 W 15th,Minneapolis,MN",44.967835,-93.278154,7,Loring Park,Central,1,3
+-93.2388769999999,44.963825,96,Northrop,2022-2023,4,96,2023/01/05 00:00:00+00,Snow Emergency,"2327 9TH ST S,Minneapolis,MN",44.963825,-93.238877,6,Seward,Longfellow,1,4
+-93.27806,44.9429700000001,97,Northrop,2022-2023,4,97,2023/01/05 00:00:00+00,Snow Emergency,"3310 NICOLLET AVE ,Minneapolis,MN",44.94297,-93.27806,8,Lyndale,Powderhorn,1,5
+-93.279475,44.958313,98,Northrop,2022-2023,4,98,2023/01/05 00:00:00+00,Snow Emergency,"2421 blaisdell Ave ,Minneapolis,MN",44.958313,-93.279475,10,Whittier,Powderhorn,1,3
+-93.238976,44.964095,99,Northrop,2022-2023,4,99,2023/01/05 00:00:00+00,Snow Emergency,"2318 9TH ST S,Minneapolis,MN",44.964095,-93.238976,6,Seward,Longfellow,1,4
+-93.28364,44.968079,100,Northrop,2022-2023,4,100,2023/01/05 00:00:00+00,Snow Emergency,"328 15th ST W,Minneapolis,MN",44.968079,-93.28364,7,Loring Park,Central,1,3
+-93.2775099999999,44.94088,101,Northrop,2022-2023,4,101,2023/01/05 00:00:00+00,Snow Emergency,"3411 Nicollet ave s,Minneapolis,MN",44.94088,-93.27751,8,Lyndale,Powderhorn,1,5
+-93.27908,44.9547400000001,102,Northrop,2022-2023,4,102,2023/01/05 00:00:00+00,Snow Emergency,"2609 BLAISDELL AVE S ,Minneapolis,MN",44.95474,-93.27908,10,Whittier,Powderhorn,1,3
+-93.27753,44.9370000000001,103,Northrop,2022-2023,4,103,2023/01/05 00:00:00+00,Snow Emergency,"3617 Nicollet ave s,Minneapolis,MN",44.937,-93.27753,8,King Field,Southwest,1,5
+-93.27908,44.9547400000001,104,Northrop,2022-2023,4,104,2023/01/05 00:00:00+00,Snow Emergency,"2609 BLAISDELL AVE S,Minneapolis,MN",44.95474,-93.27908,10,Whittier,Powderhorn,1,3
+-93.27841,44.9440300000001,105,Northrop,2022-2023,4,105,2023/01/05 00:00:00+00,Snow Emergency,"3218 NICOLLET AVE ,Minneapolis,MN",44.94403,-93.27841,8,Lyndale,Powderhorn,1,5
+-93.2437879999999,44.9638800000001,106,Northrop,2022-2023,4,106,2023/01/05 00:00:00+00,Snow Emergency,"2027 9TH ST S,Minneapolis,MN",44.96388,-93.243788,6,Seward,Longfellow,1,4
+-93.27841,44.9440300000001,107,Northrop,2022-2023,4,107,2023/01/05 00:00:00+00,Snow Emergency,"3218 NICOLLET AVE ,Minneapolis,MN",44.94403,-93.27841,8,Lyndale,Powderhorn,1,5
+-93.27915,44.9583500000001,108,Northrop,2022-2023,4,108,2023/01/05 00:00:00+00,Snow Emergency,"2423 blaisdell Ave ,Minneapolis,MN",44.95835,-93.27915,10,Whittier,Powderhorn,1,3
+-93.233096,44.9470890000001,109,Northrop,2022-2023,4,109,2023/01/05 00:00:00+00,Snow Emergency,"3091 Minnehaha ave so,Minneapolis,MN",44.947089,-93.233096,2,Longfellow,Longfellow,1,6
+-93.279475,44.9588420000001,110,Northrop,2022-2023,4,110,2023/01/05 00:00:00+00,Snow Emergency,"2403 BLAISDELL AVE S,Minneapolis,MN",44.958842,-93.279475,10,Whittier,Powderhorn,1,3
+-93.279475,44.957842,111,Northrop,2022-2023,4,111,2023/01/05 00:00:00+00,Snow Emergency,"2437 blaisdell Ave s,Minneapolis,MN",44.957842,-93.279475,10,Whittier,Powderhorn,1,3
+-93.279475,44.959657,112,Northrop,2022-2023,4,112,2023/01/05 00:00:00+00,Snow Emergency,"2323 BLAISDELL AVE,Minneapolis,MN",44.959657,-93.279475,10,Whittier,Powderhorn,1,3
+-93.28837,45.0133900000001,113,Northrop,2022-2023,4,113,2023/01/05 00:00:00+00,Snow Emergency,"3203 Lyndale ave n,Minneapolis,MN",45.01339,-93.28837,4,McKinley,Camden,1,1
+-93.233096,44.9470890000001,114,Northrop,2022-2023,4,114,2023/01/05 00:00:00+00,Snow Emergency,"3091 Minnehaha Avenue South,Minneapolis,MN",44.947089,-93.233096,2,Longfellow,Longfellow,1,6
+-93.2939499999999,45.0117300000001,115,Northrop,2022-2023,4,115,2023/01/05 00:00:00+00,Snow Emergency,"3008 Emerson ave n,Minneapolis,MN",45.01173,-93.29395,5,Hawthorne,Near North,1,1
+-93.240293,44.9466850000001,116,Northrop,2022-2023,4,116,2023/01/05 00:00:00+00,Snow Emergency,"2220 31st Street East,Minneapolis,MN",44.946685,-93.240293,9,Corcoran,Powderhorn,1,6
+-93.279505,44.95455,117,Northrop,2022-2023,4,117,2023/01/05 00:00:00+00,Snow Emergency,"2655 blaisdell Ave s,Minneapolis,MN",44.95455,-93.279505,10,Whittier,Powderhorn,1,3
+-93.2795149999999,44.9535490000001,118,Northrop,2022-2023,4,118,2023/01/05 00:00:00+00,Snow Emergency,"2707 blaisdell ave,Minneapolis,MN",44.953549,-93.279515,10,Whittier,Powderhorn,1,3
+-93.2939499999999,45.0117300000001,119,Northrop,2022-2023,4,119,2023/01/05 00:00:00+00,Snow Emergency,"3008 EMERSON AVE N,Minneapolis,MN",45.01173,-93.29395,5,Hawthorne,Near North,1,1
+-93.29365,45.00537,120,Northrop,2022-2023,4,120,2023/01/05 00:00:00+00,Snow Emergency,"2514 EMERSON AVE N,Minneapolis,MN",45.00537,-93.29365,5,Hawthorne,Near North,1,1
+-93.279475,44.9581030000001,121,Northrop,2022-2023,4,121,2023/01/05 00:00:00+00,Snow Emergency,"2455 Blaisdell ave,Minneapolis,MN",44.958103,-93.279475,10,Whittier,Powderhorn,1,3
+-93.27806,44.9429700000001,122,Northrop,2022-2023,4,122,2023/01/05 00:00:00+00,Snow Emergency,"3310 Nicollet ave ,Minneapolis,MN",44.94297,-93.27806,8,Lyndale,Powderhorn,1,5
+-93.2795149999999,44.9535490000001,123,Northrop,2022-2023,4,123,2023/01/05 00:00:00+00,Snow Emergency,"2707 blaisdell ave,Minneapolis,MN",44.953549,-93.279515,10,Whittier,Powderhorn,1,3
+-93.27762,44.9418600000001,124,Northrop,2022-2023,4,124,2023/01/05 00:00:00+00,Snow Emergency,"3341 NICOLLET AVE ,Minneapolis,MN",44.94186,-93.27762,8,Lyndale,Powderhorn,1,5
+-93.243801,44.9638800000001,125,Northrop,2022-2023,4,125,2023/01/05 00:00:00+00,Snow Emergency,"2025 S 9TH ST ,Minneapolis,MN",44.96388,-93.243801,6,Seward,Longfellow,1,4
+-93.2413769999999,44.853822,126,Northrop,2022-2023,4,126,2023/01/05 00:00:00+00,Snow Emergency,"2707 BLAISDELL ave s,Minneapolis,MN",44.853822,-93.241377,0, , ,1,0
+-93.279505,44.95439,127,Northrop,2022-2023,4,127,2023/01/05 00:00:00+00,Snow Emergency,"2635 blaisdell Ave ,Minneapolis,MN",44.95439,-93.279505,10,Whittier,Powderhorn,1,3
+-93.27753,44.93688,128,Northrop,2022-2023,4,128,2023/01/05 00:00:00+00,Snow Emergency,"3621 Nicollet ave s,Minneapolis,MN",44.93688,-93.27753,8,King Field,Southwest,1,5
+-93.238951,44.964095,129,Northrop,2022-2023,4,129,2023/01/05 00:00:00+00,Snow Emergency,"2320 9TH ST S,Minneapolis,MN",44.964095,-93.238951,6,Seward,Longfellow,1,4
+-93.27806,44.9429700000001,130,Northrop,2022-2023,4,130,2023/01/05 00:00:00+00,Snow Emergency,"3310 Nicollet ave s,Minneapolis,MN",44.94297,-93.27806,8,Lyndale,Powderhorn,1,5
+-93.222583,44.9320650000001,131,Northrop,2022-2023,4,131,2023/01/05 00:00:00+00,Snow Emergency,"3906 Minnehaha ave s,Minneapolis,MN",44.932065,-93.222583,12,Howe,Longfellow,1,6
+-93.2406139999999,44.9641130000001,132,Northrop,2022-2023,4,132,2023/01/05 00:00:00+00,Snow Emergency,"2208 9TH ST S,Minneapolis,MN",44.964113,-93.240614,6,Seward,Longfellow,1,4
+-93.238753,44.963825,133,Northrop,2022-2023,4,133,2023/01/05 00:00:00+00,Snow Emergency,"2337 S 9TH ST,Minneapolis,MN",44.963825,-93.238753,6,Seward,Longfellow,1,4
+-93.247652,44.946695,134,Northrop,2022-2023,4,134,2023/01/05 00:00:00+00,Snow Emergency,"1824 31st e,Minneapolis,MN",44.946695,-93.247652,9,Powderhorn Park,Powderhorn,1,6
+-93.29403,45.0124900000001,135,Northrop,2022-2023,4,135,2023/01/05 00:00:00+00,Snow Emergency,"3108 EMERSON AVE N,Minneapolis,MN",45.01249,-93.29403,5,Hawthorne,Near North,1,1
+-93.2800999999999,44.95831,136,Northrop,2022-2023,4,136,2023/01/05 00:00:00+00,Snow Emergency,"2420 blaisdell Ave s,Minneapolis,MN",44.95831,-93.2801,10,Whittier,Powderhorn,1,3
+-93.2279599999999,44.9124550000001,137,Northrop,2022-2023,4,137,2023/01/05 00:00:00+00,Snow Emergency,"3031 50th st e,Minneapolis,MN",44.912455,-93.22796,12,Keewaydin,Nokomis,1,6
+-93.275506,44.933299,138,Northrop,2022-2023,4,138,2023/01/05 00:00:00+00,Snow Emergency,"3824 stevens ave s ,Minneapolis,MN",44.933299,-93.275506,8,King Field,Southwest,1,5
+-93.2939499999999,45.0116,139,Northrop,2022-2023,4,139,2023/01/05 00:00:00+00,Snow Emergency,"3006 Emerson ave n,Minneapolis,MN",45.0116,-93.29395,5,Hawthorne,Near North,1,1
+-93.2775099999999,44.94088,140,Northrop,2022-2023,4,140,2023/01/05 00:00:00+00,Snow Emergency,"3411 NICOLLET AVE ,Minneapolis,MN",44.94088,-93.27751,8,Lyndale,Powderhorn,1,5
+-93.29594,45.01525,141,Northrop,2022-2023,4,141,2023/01/05 00:00:00+00,Snow Emergency,"3305 Fremont ave n,Minneapolis,MN",45.01525,-93.29594,4,Folwell,Camden,1,1
+-93.21397,44.9188800000001,142,Northrop,2022-2023,4,142,2023/01/05 00:00:00+00,Snow Emergency,"4629 Minnehaha Avenue South,Minneapolis,MN",44.91888,-93.21397,12,Hiawatha,Longfellow,1,6
+-93.233096,44.9470890000001,143,Northrop,2022-2023,4,143,2023/01/05 00:00:00+00,Snow Emergency,"3091 Minnehaha Avenue South,Minneapolis,MN",44.947089,-93.233096,2,Longfellow,Longfellow,1,6
+-93.238803,44.963825,144,Northrop,2022-2023,4,144,2023/01/05 00:00:00+00,Snow Emergency,"2333 9TH ST S,Minneapolis,MN",44.963825,-93.238803,6,Seward,Longfellow,1,4
+-93.24199,44.8535400000001,145,Northrop,2022-2023,4,145,2023/01/05 00:00:00+00,Snow Emergency,"272 1st ave s,Minneapolis,MN",44.85354,-93.24199,0, , ,1,0
+-93.2795149999999,44.952907,146,Northrop,2022-2023,4,146,2023/01/05 00:00:00+00,Snow Emergency,"2739 blaisdell ave,Minneapolis,MN",44.952907,-93.279515,10,Whittier,Powderhorn,1,3
+-93.27923,44.93523,147,Northrop,2022-2023,4,147,2023/01/05 00:00:00+00,Snow Emergency,"3721 blaisdell Ave ,Minneapolis,MN",44.93523,-93.27923,8,King Field,Southwest,1,5
+-93.27755,44.9420400000001,148,Northrop,2022-2023,4,148,2023/01/05 00:00:00+00,Snow Emergency,"3333 NICOLLET AVE ,Minneapolis,MN",44.94204,-93.27755,8,Lyndale,Powderhorn,1,5
+-93.29524,45.0227400000001,149,Northrop,2022-2023,4,149,2023/01/05 00:00:00+00,Snow Emergency,"3718 FREMONT AVE N,Minneapolis,MN",45.02274,-93.29524,4,Folwell,Camden,1,1
+-93.27752,44.93658,150,Northrop,2022-2023,4,150,2023/01/05 00:00:00+00,Snow Emergency,"3627 Nicollet ave s,Minneapolis,MN",44.93658,-93.27752,8,King Field,Southwest,1,5
+-93.29524,45.0227400000001,151,Northrop,2022-2023,4,151,2023/01/05 00:00:00+00,Snow Emergency,"3718 FREMONT AVE N,Minneapolis,MN",45.02274,-93.29524,4,Folwell,Camden,1,1
+-93.279505,44.9542200000001,152,Northrop,2022-2023,4,152,2023/01/05 00:00:00+00,Snow Emergency,"2677 blaisdell Ave s,Minneapolis,MN",44.95422,-93.279505,10,Whittier,Powderhorn,1,3
+-93.27568,44.93321,153,Northrop,2022-2023,4,153,2023/01/05 00:00:00+00,Snow Emergency,"3828 Stevens ave,Minneapolis,MN",44.93321,-93.27568,8,King Field,Southwest,1,5
+-93.276395,44.9614570000001,154,Northrop,2022-2023,4,154,2023/01/05 00:00:00+00,Snow Emergency,"2135 1st ave s,Minneapolis,MN",44.961457,-93.276395,10,Whittier,Powderhorn,1,3
+-93.2417,44.96376,155,Northrop,2022-2023,4,155,2023/01/05 00:00:00+00,Snow Emergency,"2111 9TH ST S,Minneapolis,MN",44.96376,-93.2417,6,Seward,Longfellow,1,4
+-93.27754,44.9444300000001,156,Northrop,2022-2023,4,156,2023/01/05 00:00:00+00,Snow Emergency,"3215 NICOLLET AVE,Minneapolis,MN",44.94443,-93.27754,8,Lyndale,Powderhorn,1,5
+-93.228311,44.9404870000001,157,Northrop,2022-2023,4,157,2023/01/05 00:00:00+00,Snow Emergency,"3439 Minnehaha Avenue South,Minneapolis,MN",44.940487,-93.228311,12,Howe,Longfellow,1,6
+-93.29538,45.0308200000001,158,Northrop,2022-2023,4,158,2023/01/05 00:00:00+00,Snow Emergency,"4134 FREMONT AVE N,Minneapolis,MN",45.03082,-93.29538,4,Webber - Camden,Camden,1,1
+-93.29545,45.0245320000001,159,Northrop,2022-2023,4,159,2023/01/05 00:00:00+00,Snow Emergency,"3824 FREMONT AVE N,Minneapolis,MN",45.024532,-93.29545,4,Webber - Camden,Camden,1,1
+-93.2769499999999,44.9644200000001,160,Northrop,2022-2023,4,160,2023/01/05 00:00:00+00,Snow Emergency,"1820 1st ave s ,Minneapolis,MN",44.96442,-93.27695,6,Steven's Square - Loring Heights,Central,1,3
+-93.239055,44.9460910000001,161,Northrop,2022-2023,4,161,2023/01/05 00:00:00+00,Snow Emergency,"3110 23rd ave s,Minneapolis,MN",44.946091,-93.239055,9,Corcoran,Powderhorn,1,6
+-93.239055,44.9460910000001,162,Northrop,2022-2023,4,162,2023/01/05 00:00:00+00,Snow Emergency,"3110 23rd Avenue South,Minneapolis,MN",44.946091,-93.239055,9,Corcoran,Powderhorn,1,6
+-93.275476,44.938499,163,Northrop,2022-2023,4,163,2023/01/05 00:00:00+00,Snow Emergency,"3530 STEVENS AVE ,Minneapolis,MN",44.938499,-93.275476,8,Lyndale,Powderhorn,1,5
+-93.28802,45.03752,164,Northrop,2022-2023,4,164,2023/01/05 00:00:00+00,Snow Emergency,"4527 LYNDALE AVE N,Minneapolis,MN",45.03752,-93.28802,4,Lind - Bohanon,Camden,1,1
+-93.275457,44.940543,165,Northrop,2022-2023,4,165,2023/01/05 00:00:00+00,Snow Emergency,"3422 STEVENS AVES,Minneapolis,MN",44.940543,-93.275457,8,Lyndale,Powderhorn,1,5
+-93.287048,45.0398070000001,166,Northrop,2022-2023,4,166,2023/01/05 00:00:00+00,Snow Emergency,"4642 LYNDALE AVE N,Minneapolis,MN",45.039807,-93.287048,4,Camden Industrial,Camden,1,1
+-93.30378,44.94604,167,Northrop,2022-2023,4,167,2023/01/05 00:00:00+00,Snow Emergency,"3112 James ave s ,Minneapolis,MN",44.94604,-93.30378,10,East Bde Maka Ska,Calhoun Isle,2,5
+-93.30378,44.9462800000001,168,Northrop,2022-2023,4,168,2023/01/05 00:00:00+00,Snow Emergency,"3104 James Ave s,Minneapolis,MN",44.94628,-93.30378,10,East Bde Maka Ska,Calhoun Isle,2,5
+-93.241246,44.853554,169,Northrop,2022-2023,4,169,2023/01/05 00:00:00+00,Snow Emergency,"3108 HUMBOLT AVE S,Minneapolis,MN",44.853554,-93.241246,0, , ,2,0
+-93.2704899999999,45.0126000000001,170,Northrop,2022-2023,4,170,2023/01/05 00:00:00+00,Snow Emergency,"2416 GRAND ST NE,Minneapolis,MN",45.0126,-93.27049,3,Bottineau,Northeast,2,2
+-93.30123,44.9455100000001,171,Northrop,2022-2023,4,171,2023/01/05 00:00:00+00,Snow Emergency,"3128 Humboldt ave s ,Minneapolis,MN",44.94551,-93.30123,10,East Bde Maka Ska,Calhoun Isle,2,5
+-93.269636,45.001829,172,Northrop,2022-2023,4,172,2023/01/05 00:00:00+00,Snow Emergency,"1404 GRAND ST NE,Minneapolis,MN",45.001829,-93.269636,3,Sheridan,Northeast,2,2
+-93.29995,44.9457600000001,173,Northrop,2022-2023,4,173,2023/01/05 00:00:00+00,Snow Emergency,"3120 HOLMES AVE S,Minneapolis,MN",44.94576,-93.29995,10,East Bde Maka Ska,Calhoun Isle,2,5
+-93.26994,45.0019100000001,174,Northrop,2022-2023,4,174,2023/01/05 00:00:00+00,Snow Emergency,"1408 GRAND T NE,Minneapolis,MN",45.00191,-93.26994,3,Sheridan,Northeast,2,2
+-93.2694499999999,45.0010600000001,175,Northrop,2022-2023,4,175,2023/01/05 00:00:00+00,Snow Emergency,"1320 GRAND ST NE,Minneapolis,MN",45.00106,-93.26945,3,Sheridan,Northeast,2,2
+-93.30001,44.9379700000001,176,Northrop,2022-2023,4,176,2023/01/05 00:00:00+00,Snow Emergency,"3548 HOLMES AVE,Minneapolis,MN",44.93797,-93.30001,10,East Bde Maka Ska,Calhoun Isle,2,5
+-93.3008,44.9499000000001,177,Northrop,2022-2023,4,177,2023/01/05 00:00:00+00,Snow Emergency,"The mall and Humboldt ave s,Minneapolis,MN",44.9499,-93.3008,7,East Isles,Calhoun Isle,2,3
+-93.301075,44.940931,178,Northrop,2022-2023,4,178,2023/01/05 00:00:00+00,Snow Emergency,"3418 Humboldt ave s,Minneapolis,MN",44.940931,-93.301075,10,East Bde Maka Ska,Calhoun Isle,2,5
+-93.297195,44.9445180000001,179,Northrop,2022-2023,4,179,2023/01/05 00:00:00+00,Snow Emergency,"3204 Girard ave s ,Minneapolis,MN",44.944518,-93.297195,10,South Uptown,Calhoun Isle,2,5
+-93.279639,44.968914,180,Northrop,2022-2023,4,180,2023/01/05 00:00:00+00,Snow Emergency,"124 14th st w ,Minneapolis,MN",44.968914,-93.279639,7,Loring Park,Central,2,3
+-93.29739,44.94595,181,Northrop,2022-2023,4,181,2023/01/05 00:00:00+00,Snow Emergency,"3116 GIRARD AVE S ,Minneapolis,MN",44.94595,-93.29739,10,South Uptown,Calhoun Isle,2,5
+-93.28122,44.9671700000001,182,Northrop,2022-2023,4,182,2023/01/05 00:00:00+00,Snow Emergency,"1512 spruce place ,Minneapolis,MN",44.96717,-93.28122,7,Loring Park,Central,2,3
+-93.31092,44.9617700000001,183,Northrop,2022-2023,4,183,2023/01/05 00:00:00+00,Snow Emergency,"2027 KENWOOD PKWY ,Minneapolis,MN",44.96177,-93.31092,7,Kenwood,Calhoun Isle,2,3
+-93.244928,44.989403,184,Northrop,2022-2023,4,184,2023/01/05 00:00:00+00,Snow Emergency,"800 5th ave se,Minneapolis,MN",44.989403,-93.244928,3,Marcy Holmes,University,2,4
+-93.3035379999999,44.947725,185,Northrop,2022-2023,4,185,2023/01/05 00:00:00+00,Snow Emergency,"3014 James Ave S,Minneapolis,MN",44.947725,-93.303538,10,East Bde Maka Ska,Calhoun Isle,2,5
+-93.2988999999999,44.9499700000001,186,Northrop,2022-2023,4,186,2023/01/05 00:00:00+00,Snow Emergency,"The mall,Minneapolis,MN",44.94997,-93.2989,7,East Isles,Calhoun Isle,2,3
+-93.291108,44.984697,187,Northrop,2022-2023,4,187,2023/01/05 00:00:00+00,Snow Emergency,"630 BRYANT AVE N,Minneapolis,MN",44.984697,-93.291108,5,Sumner - Glenwood,Near North,2,1
+-93.29107,44.9846000000001,188,Northrop,2022-2023,4,188,2023/01/05 00:00:00+00,Snow Emergency,"624 BRYANT AVE N,Minneapolis,MN",44.9846,-93.29107,5,Sumner - Glenwood,Near North,2,1
+-93.2809549999999,44.9667630000001,189,Northrop,2022-2023,4,189,2023/01/05 00:00:00+00,Snow Emergency,"1530 spruce place ,Minneapolis,MN",44.966763,-93.280955,7,Loring Park,Central,2,3
+-93.2948499999999,44.9451500000001,190,Northrop,2022-2023,4,190,2023/01/05 00:00:00+00,Snow Emergency,"3142 EMERSON AVE S,Minneapolis,MN",44.94515,-93.29485,10,South Uptown,Calhoun Isle,2,5
+-93.2578599999999,44.93825,191,Northrop,2022-2023,4,191,2023/01/05 00:00:00+00,Snow Emergency,"3538 12th ave s,Minneapolis,MN",44.93825,-93.25786,9,Powderhorn Park,Powderhorn,2,6
+-93.2514889999999,44.9306250000001,192,Northrop,2022-2023,4,192,2023/01/05 00:00:00+00,Snow Emergency,"1546 40th st e,Minneapolis,MN",44.930625,-93.251489,8,Bancroft,Powderhorn,2,6
+-93.29721,44.9440500000001,193,Northrop,2022-2023,4,193,2023/01/05 00:00:00+00,Snow Emergency,"3238 Girard ave s,Minneapolis,MN",44.94405,-93.29721,10,South Uptown,Calhoun Isle,2,5
+-93.2948499999999,44.9452700000001,194,Northrop,2022-2023,4,194,2023/01/05 00:00:00+00,Snow Emergency,"3136 EMERSON AVE S ,Minneapolis,MN",44.94527,-93.29485,10,South Uptown,Calhoun Isle,2,5
+-93.257575,44.93735,195,Northrop,2022-2023,4,195,2023/01/05 00:00:00+00,Snow Emergency,"3620 12th Ave s,Minneapolis,MN",44.93735,-93.257575,9,Powderhorn Park,Powderhorn,2,6
+-93.251454,44.9306250000001,196,Northrop,2022-2023,4,196,2023/01/05 00:00:00+00,Snow Emergency,"1556 40th st e,Minneapolis,MN",44.930625,-93.251454,8,Bancroft,Powderhorn,2,6
+-93.24279,44.9893000000001,197,Northrop,2022-2023,4,197,2023/01/05 00:00:00+00,Snow Emergency,"824 6th ave se,Minneapolis,MN",44.9893,-93.24279,3,Marcy Holmes,University,2,4
+-93.2809549999999,44.96941,198,Northrop,2022-2023,4,198,2023/01/05 00:00:00+00,Snow Emergency,"1352 Spruce pl,Minneapolis,MN",44.96941,-93.280955,7,Loring Park,Central,2,3
+-93.280965,44.9678910000001,199,Northrop,2022-2023,4,199,2023/01/05 00:00:00+00,Snow Emergency,"1428 spruce pl,Minneapolis,MN",44.967891,-93.280965,7,Loring Park,Central,2,3
+-93.240833,44.8535610000001,200,Northrop,2022-2023,4,200,2023/01/05 00:00:00+00,Snow Emergency,"5218 Elliott Avenue South,Minneapolis,MN",44.853561,-93.240833,0, , ,2,0
+-93.280965,44.9691020000001,201,Northrop,2022-2023,4,201,2023/01/05 00:00:00+00,Snow Emergency,"1360 spruce place ,Minneapolis,MN",44.969102,-93.280965,7,Loring Park,Central,2,3
+-93.2408159999999,44.8535620000001,202,Northrop,2022-2023,4,202,2023/01/05 00:00:00+00,Snow Emergency,"5304 Elliott Avenue South,Minneapolis,MN",44.853562,-93.240816,0, , ,2,0
+-93.2651,45.0138200000001,203,Northrop,2022-2023,4,203,2023/01/05 00:00:00+00,Snow Emergency,"2518 3RD ST NE,Minneapolis,MN",45.01382,-93.2651,1,Marshall Terrace,Northeast,2,2
+-93.2988,44.9448800000001,204,Northrop,2022-2023,4,204,2023/01/05 00:00:00+00,Snow Emergency,"1432 32nd St W,Minneapolis,MN",44.94488,-93.2988,10,East Bde Maka Ska,Calhoun Isle,2,5
+-93.245669,44.971254,205,Northrop,2022-2023,4,205,2023/01/05 00:00:00+00,Snow Emergency,"1912 3RD ST SE,Minneapolis,MN",44.971254,-93.245669,2,Cedar Riverside,University,2,4
+-93.29484,44.94602,206,Northrop,2022-2023,4,206,2023/01/05 00:00:00+00,Snow Emergency,"3112 Emerson Ave S,Minneapolis,MN",44.94602,-93.29484,10,South Uptown,Calhoun Isle,2,5
+-93.2650399999999,45.0072500000001,207,Northrop,2022-2023,4,207,2023/01/05 00:00:00+00,Snow Emergency,"1826 3RD ST NE,Minneapolis,MN",45.00725,-93.26504,3,Bottineau,Northeast,2,2
+-93.2980449999999,44.989421,208,Northrop,2022-2023,4,208,2023/01/05 00:00:00+00,Snow Emergency,"1128 HUMBOLDT AVE N,Minneapolis,MN",44.989421,-93.298045,5,Near - North,Near North,2,1
+-93.280965,44.9691110000001,209,Northrop,2022-2023,4,209,2023/01/05 00:00:00+00,Snow Emergency,"1358 spruce PL,Minneapolis,MN",44.969111,-93.280965,7,Loring Park,Central,2,3
+-93.2980449999999,44.989129,210,Northrop,2022-2023,4,210,2023/01/05 00:00:00+00,Snow Emergency,"1104 HUMBOLDT AVE N,Minneapolis,MN",44.989129,-93.298045,5,Near - North,Near North,2,1
+-93.24645,44.9419500000001,211,Northrop,2022-2023,4,211,2023/01/05 00:00:00+00,Snow Emergency,"3320 Longfellow Ave s,Minneapolis,MN",44.94195,-93.24645,9,Corcoran,Powderhorn,2,6
+-93.275705,44.9664050000001,212,Northrop,2022-2023,4,212,2023/01/05 00:00:00+00,Snow Emergency,"118 17th st e ,Minneapolis,MN",44.966405,-93.275705,6,Steven's Square - Loring Heights,Central,2,3
+-93.2762049999999,44.9664050000001,213,Northrop,2022-2023,4,213,2023/01/05 00:00:00+00,Snow Emergency,"110 17TH ST E,Minneapolis,MN",44.966405,-93.276205,6,Steven's Square - Loring Heights,Central,2,3
+-93.2750569999999,44.9640850000001,214,Northrop,2022-2023,4,214,2023/01/05 00:00:00+00,Snow Emergency,"134 19th st e,Minneapolis,MN",44.964085,-93.275057,6,Steven's Square - Loring Heights,Central,2,3
+-93.3121399999999,44.92299,215,Northrop,2022-2023,4,215,2023/01/05 00:00:00+00,Snow Emergency,"4400 W LAKE HARRIET PKWY,Minneapolis,MN",44.92299,-93.31214,13,Linden Hills,Southwest,2,5
+-93.275635,44.9664050000001,216,Northrop,2022-2023,4,216,2023/01/05 00:00:00+00,Snow Emergency,"122 17th ST E,Minneapolis,MN",44.966405,-93.275635,6,Steven's Square - Loring Heights,Central,2,3
+-93.28621,45.0171800000001,217,Northrop,2022-2023,4,217,2023/01/05 00:00:00+00,Snow Emergency,"3414 6st n,Minneapolis,MN",45.01718,-93.28621,4,McKinley,Camden,2,1
+-93.289525,44.946424,218,Northrop,2022-2023,4,218,2023/01/05 00:00:00+00,Snow Emergency,"3124 ALDRICH AVE S,Minneapolis,MN",44.946424,-93.289525,10,South Uptown,Calhoun Isle,2,5
+-93.275501,44.964074,219,Northrop,2022-2023,4,219,2023/01/05 00:00:00+00,Snow Emergency,"130 19TH ST E ,Minneapolis,MN",44.964074,-93.275501,6,Steven's Square - Loring Heights,Central,2,3
+-93.275573,44.964071,220,Northrop,2022-2023,4,220,2023/01/05 00:00:00+00,Snow Emergency,"126 19th st E,Minneapolis,MN",44.964071,-93.275573,6,Steven's Square - Loring Heights,Central,2,3
+-93.247631,44.9886710000001,221,Northrop,2022-2023,4,221,2023/01/05 00:00:00+00,Snow Emergency,"628 4th ave se,Minneapolis,MN",44.988671,-93.247631,3,Marcy Holmes,University,2,4
+-93.31148,44.91632,222,Northrop,2022-2023,4,222,2023/01/05 00:00:00+00,Snow Emergency,"W lake Harriet Pkwy ,Minneapolis,MN",44.91632,-93.31148,13,Fulton,Southwest,2,5
+-93.2756459999999,44.9640690000001,223,Northrop,2022-2023,4,223,2023/01/05 00:00:00+00,Snow Emergency,"122 19th st e ,Minneapolis,MN",44.964069,-93.275646,6,Steven's Square - Loring Heights,Central,2,3
+-93.30108,44.944865,224,Northrop,2022-2023,4,224,2023/01/05 00:00:00+00,Snow Emergency,"1504 32nd St W,Minneapolis,MN",44.944865,-93.30108,10,East Bde Maka Ska,Calhoun Isle,2,5
+-93.273756,44.9663850000001,225,Northrop,2022-2023,4,225,2023/01/05 00:00:00+00,Snow Emergency,"218 17th st e,Minneapolis,MN",44.966385,-93.273756,6,Steven's Square - Loring Heights,Central,2,3
+-93.24902,44.94791,226,Northrop,2022-2023,4,226,2023/01/05 00:00:00+00,Snow Emergency,"3012 18th ave so,Minneapolis,MN",44.94791,-93.24902,9,Powderhorn Park,Powderhorn,2,6
+-93.30123,44.9452700000001,227,Northrop,2022-2023,4,227,2023/01/05 00:00:00+00,Snow Emergency,"3138 Humboldt Ave S,Minneapolis,MN",44.94527,-93.30123,10,East Bde Maka Ska,Calhoun Isle,2,5
+-93.2922799999999,44.94768,228,Northrop,2022-2023,4,228,2023/01/05 00:00:00+00,Snow Emergency,"3016 COLFAX AVE S,Minneapolis,MN",44.94768,-93.29228,10,South Uptown,Calhoun Isle,2,5
+-93.27423,44.9650280000001,229,Northrop,2022-2023,4,229,2023/01/05 00:00:00+00,Snow Emergency,"1802 2ND AVE S,Minneapolis,MN",44.965028,-93.27423,6,Steven's Square - Loring Heights,Central,2,3
+-93.2661869999999,44.9975930000001,230,Northrop,2022-2023,4,230,2023/01/05 00:00:00+00,Snow Emergency,"146 10TH AVE NE,Minneapolis,MN",44.997593,-93.266187,3,St. Anthony West,Northeast,2,2
+-93.2376,44.9442700000001,231,Northrop,2022-2023,4,231,2023/01/05 00:00:00+00,Snow Emergency,"3208 24th Avenue South,Minneapolis,MN",44.94427,-93.2376,9,Corcoran,Powderhorn,2,6
+-93.2377,44.94406,232,Northrop,2022-2023,4,232,2023/01/05 00:00:00+00,Snow Emergency,"3216 24th Avenue South,Minneapolis,MN",44.94406,-93.2377,9,Corcoran,Powderhorn,2,6
+-93.2721099999999,44.96536,233,Northrop,2022-2023,4,233,2023/01/05 00:00:00+00,Snow Emergency,"300 18th st e,Minneapolis,MN",44.96536,-93.27211,6,Steven's Square - Loring Heights,Central,2,3
+-93.251255,44.931631,234,Northrop,2022-2023,4,234,2023/01/05 00:00:00+00,Snow Emergency,"3914 16th Ave s,Minneapolis,MN",44.931631,-93.251255,8,Bancroft,Powderhorn,2,6
+-93.24641,44.9357800000001,235,Northrop,2022-2023,4,235,2023/01/05 00:00:00+00,Snow Emergency,"3700 Longfellow Ave s,Minneapolis,MN",44.93578,-93.24641,12,Standish,Powderhorn,2,6
+-93.241483,44.85355,236,Northrop,2022-2023,4,236,2023/01/05 00:00:00+00,Snow Emergency,"1900 Steven AVE S,Minneapolis,MN",44.85355,-93.241483,0, , ,2,0
+-93.2464199999999,44.9378800000001,237,Northrop,2022-2023,4,237,2023/01/05 00:00:00+00,Snow Emergency,"3544 Longfellow ave s,Minneapolis,MN",44.93788,-93.24642,9,Corcoran,Powderhorn,2,6
+-93.27565,44.9634600000001,238,Northrop,2022-2023,4,238,2023/01/05 00:00:00+00,Snow Emergency,"1912 stevens ave s,Minneapolis,MN",44.96346,-93.27565,6,Steven's Square - Loring Heights,Central,2,3
+-93.3121399999999,44.92299,239,Northrop,2022-2023,4,239,2023/01/05 00:00:00+00,Snow Emergency,"4400 W LAKE HARRIET PKWY,Minneapolis,MN",44.92299,-93.31214,13,Linden Hills,Southwest,2,5
+-93.298055,44.9908580000001,240,Northrop,2022-2023,4,240,2023/01/05 00:00:00+00,Snow Emergency,"1204 HUMBOLDT AVE N,Minneapolis,MN",44.990858,-93.298055,5,Near - North,Near North,2,1
+-93.243368,45.1969750000001,241,Northrop,2022-2023,4,241,2023/01/05 00:00:00+00,Snow Emergency,"1010 MAIN ST NE,Minneapolis,MN",45.196975,-93.243368,0, , ,2,0
+-93.275718,44.9640660000001,242,Northrop,2022-2023,4,242,2023/01/05 00:00:00+00,Snow Emergency,"118 19th st E,Minneapolis,MN",44.964066,-93.275718,6,Steven's Square - Loring Heights,Central,2,3
+-93.27563,44.9644900000001,243,Northrop,2022-2023,4,243,2023/01/05 00:00:00+00,Snow Emergency,"1820 stevens AVE S,Minneapolis,MN",44.96449,-93.27563,6,Steven's Square - Loring Heights,Central,2,3
+-93.243239,45.1969750000001,244,Northrop,2022-2023,4,244,2023/01/05 00:00:00+00,Snow Emergency,"1018 MAIN ST NE,Minneapolis,MN",45.196975,-93.243239,0, , ,2,0
+-93.31426,44.9923000000001,245,Northrop,2022-2023,4,245,2023/01/05 00:00:00+00,Snow Emergency,"1320 UPTON AVE N,Minneapolis,MN",44.9923,-93.31426,5,Willard - Hay,Near North,2,1
+-93.27423,44.9649880000001,246,Northrop,2022-2023,4,246,2023/01/05 00:00:00+00,Snow Emergency,"1806 2nd ave s,Minneapolis,MN",44.964988,-93.27423,6,Steven's Square - Loring Heights,Central,2,3
+-93.24269,44.9440200000001,247,Northrop,2022-2023,4,247,2023/01/05 00:00:00+00,Snow Emergency,"3216 21st ave so,Minneapolis,MN",44.94402,-93.24269,9,Corcoran,Powderhorn,2,6
+-93.274165,44.9637250000001,248,Northrop,2022-2023,4,248,2023/01/05 00:00:00+00,Snow Emergency,"1914 2nd ave s,Minneapolis,MN",44.963725,-93.274165,6,Steven's Square - Loring Heights,Central,2,3
+-93.2909,44.96558,249,Northrop,2022-2023,4,249,2023/01/05 00:00:00+00,Snow Emergency,"1786 bryant ave s,Minneapolis,MN",44.96558,-93.2909,7,Lowry Hill,Calhoun Isle,2,3
+-93.2889699999999,45.0254,250,Northrop,2022-2023,4,250,2023/01/05 00:00:00+00,Snow Emergency,"3850 Aldrich ave n ,Minneapolis,MN",45.0254,-93.28897,4,Webber - Camden,Camden,2,1
+-93.26167,44.938,251,Northrop,2022-2023,4,251,2023/01/05 00:00:00+00,Snow Emergency,"1816 36th Street East,Minneapolis,MN",44.938,-93.26167,9,Powderhorn Park,Powderhorn,2,6
+-93.246452,44.9414550000001,252,Northrop,2022-2023,4,252,2023/01/05 00:00:00+00,Snow Emergency,"1842 34th St E,Minneapolis,MN",44.941455,-93.246452,9,Corcoran,Powderhorn,2,6
+-93.2889,45.01437,253,Northrop,2022-2023,4,253,2023/01/05 00:00:00+00,Snow Emergency,"3238 Aldrich ave n ,Minneapolis,MN",45.01437,-93.2889,4,McKinley,Camden,2,1
+-93.31426,44.9921800000001,254,Northrop,2022-2023,4,254,2023/01/05 00:00:00+00,Snow Emergency,"1316 UPTON AVE N,Minneapolis,MN",44.99218,-93.31426,5,Willard - Hay,Near North,2,1
+-93.2919249999999,44.9637970000001,255,Northrop,2022-2023,4,255,2023/01/05 00:00:00+00,Snow Emergency,"1932 Colfax AVE S,Minneapolis,MN",44.963797,-93.291925,7,Lowry Hill,Calhoun Isle,2,3
+-93.31425,44.9940500000001,256,Northrop,2022-2023,4,256,2023/01/05 00:00:00+00,Snow Emergency,"1422 UPTON AVE N,Minneapolis,MN",44.99405,-93.31425,5,Willard - Hay,Near North,2,1
+-93.28342,44.94516,257,Northrop,2022-2023,4,257,2023/01/05 00:00:00+00,Snow Emergency,"3140 PLEASANT AVE ,Minneapolis,MN",44.94516,-93.28342,8,Lyndale,Powderhorn,2,5
+-93.24683,44.9857900000001,258,Northrop,2022-2023,4,258,2023/01/05 00:00:00+00,Snow Emergency,"520 5TH ST SE,Minneapolis,MN",44.98579,-93.24683,3,Marcy Holmes,University,2,4
+-93.311368,44.924086,259,Northrop,2022-2023,4,259,2023/01/05 00:00:00+00,Snow Emergency,"4300 W Lake Harriet Pkwy,Minneapolis,MN",44.924086,-93.311368,13,Linden Hills,Southwest,2,5
+-93.311368,44.924086,260,Northrop,2022-2023,4,260,2023/01/05 00:00:00+00,Snow Emergency,"4300 W Lake Harriet Plwy,Minneapolis,MN",44.924086,-93.311368,13,Linden Hills,Southwest,2,5
+-93.29356,44.94602,261,Northrop,2022-2023,4,261,2023/01/05 00:00:00+00,Snow Emergency,"3112 Dupont ave s ,Minneapolis,MN",44.94602,-93.29356,10,South Uptown,Calhoun Isle,2,5
+-93.24641,44.9355600000001,262,Northrop,2022-2023,4,262,2023/01/05 00:00:00+00,Snow Emergency,"3708 Longfellow ave s ,Minneapolis,MN",44.93556,-93.24641,12,Standish,Powderhorn,2,6
+-93.24388,44.9292500000001,263,Northrop,2022-2023,4,263,2023/01/05 00:00:00+00,Snow Emergency,"4040 20th Ave s ,Minneapolis,MN",44.92925,-93.24388,12,Standish,Powderhorn,2,6
+-93.2176699999999,44.9209500000001,264,Northrop,2022-2023,4,264,2023/01/05 00:00:00+00,Snow Emergency,"4512 Snelling ave so,Minneapolis,MN",44.92095,-93.21767,12,Hiawatha,Longfellow,2,6
+-93.29366,44.9634500000001,265,Northrop,2022-2023,4,265,2023/01/05 00:00:00+00,Snow Emergency,"1930 Dupont ave s,Minneapolis,MN",44.96345,-93.29366,7,Lowry Hill,Calhoun Isle,2,3
+-93.28336,44.95959,266,Northrop,2022-2023,4,266,2023/01/05 00:00:00+00,Snow Emergency,"2302 pleasant ave ,Minneapolis,MN",44.95959,-93.28336,10,Whittier,Powderhorn,2,3
+-93.281415,44.9585000000001,267,Northrop,2022-2023,4,267,2023/01/05 00:00:00+00,Snow Emergency,"2412 Pillsbury av s ,Minneapolis,MN",44.9585,-93.281415,10,Whittier,Powderhorn,2,3
+-93.2531,44.9448750000001,268,Northrop,2022-2023,4,268,2023/01/05 00:00:00+00,Snow Emergency,"1516 32nd St E,Minneapolis,MN",44.944875,-93.2531,9,Powderhorn Park,Powderhorn,2,6
+-93.281595,44.9448550000001,269,Northrop,2022-2023,4,269,2023/01/05 00:00:00+00,Snow Emergency,"202 W 32ND ST,Minneapolis,MN",44.944855,-93.281595,8,Lyndale,Powderhorn,2,5
+-93.24388,44.9290300000001,270,Northrop,2022-2023,4,270,2023/01/05 00:00:00+00,Snow Emergency,"4048 20th Ave s,Minneapolis,MN",44.92903,-93.24388,12,Standish,Powderhorn,2,6
+-93.25631,44.9923000000001,271,Northrop,2022-2023,4,271,2023/01/05 00:00:00+00,Snow Emergency,"312 5TH ST NE,Minneapolis,MN",44.9923,-93.25631,3,St. Anthony West,Northeast,2,2
+-93.2460399999999,44.9855000000001,272,Northrop,2022-2023,4,272,2023/01/05 00:00:00+00,Snow Emergency,"604 5TH ST SE,Minneapolis,MN",44.9855,-93.24604,3,Marcy Holmes,University,2,4
+-93.283055,44.9624890000001,273,Northrop,2022-2023,4,273,2023/01/05 00:00:00+00,Snow Emergency,"2006 Pleasant Ave,Minneapolis,MN",44.962489,-93.283055,10,Whittier,Powderhorn,2,3
+-93.23119,44.93521,274,Northrop,2022-2023,4,274,2023/01/05 00:00:00+00,Snow Emergency,"3720 29th Avenue South,Minneapolis,MN",44.93521,-93.23119,12,Standish,Powderhorn,2,6
+-93.2810239999999,44.963536,275,Northrop,2022-2023,4,275,2023/01/05 00:00:00+00,Snow Emergency,"1928 PILLSBURY AVE S ,Minneapolis,MN",44.963536,-93.281024,7,Steven's Square - Loring Heights,Central,2,3
+-93.2496159999999,44.990824,276,Northrop,2022-2023,4,276,2023/01/05 00:00:00+00,Snow Emergency,"726 2ND AVE SE,Minneapolis,MN",44.990824,-93.249616,3,Marcy Holmes,University,2,2
+-93.230454,44.9306250000001,277,Northrop,2022-2023,4,277,2023/01/05 00:00:00+00,Snow Emergency,"2928 40th Street East,Minneapolis,MN",44.930625,-93.230454,12,Standish,Powderhorn,2,6
+-93.234795,44.9372670000001,278,Northrop,2022-2023,4,278,2023/01/05 00:00:00+00,Snow Emergency,"3610 26th ave s,Minneapolis,MN",44.937267,-93.234795,12,Standish,Powderhorn,2,6
+-93.2845799999999,44.9611400000001,279,Northrop,2022-2023,4,279,2023/01/05 00:00:00+00,Snow Emergency,"2122 grand ave s ,Minneapolis,MN",44.96114,-93.28458,10,Whittier,Powderhorn,2,3
+-93.2845799999999,44.96049,280,Northrop,2022-2023,4,280,2023/01/05 00:00:00+00,Snow Emergency,"2208 grand ave s,Minneapolis,MN",44.96049,-93.28458,10,Whittier,Powderhorn,2,3
+-93.243332,44.98913,281,Northrop,2022-2023,4,281,2023/01/05 00:00:00+00,Snow Emergency,"816 6th ave se,Minneapolis,MN",44.98913,-93.243332,3,Marcy Holmes,University,2,4
+-93.281044,44.9448550000001,282,Northrop,2022-2023,4,282,2023/01/05 00:00:00+00,Snow Emergency,"124 w 32nd st,Minneapolis,MN",44.944855,-93.281044,8,Lyndale,Powderhorn,2,5
+-93.2845799999999,44.9621900000001,283,Northrop,2022-2023,4,283,2023/01/05 00:00:00+00,Snow Emergency,"2012 Grand ave s,Minneapolis,MN",44.96219,-93.28458,10,Whittier,Powderhorn,2,3
+-93.28336,44.95959,284,Northrop,2022-2023,4,284,2023/01/05 00:00:00+00,Snow Emergency,"2314 pleasant ave s ,Minneapolis,MN",44.95959,-93.28336,10,Whittier,Powderhorn,2,3
+-93.2845799999999,44.9617500000001,285,Northrop,2022-2023,4,285,2023/01/05 00:00:00+00,Snow Emergency,"2100 Grand ave s,Minneapolis,MN",44.96175,-93.28458,10,Whittier,Powderhorn,2,3
+-93.2817709999999,44.9448550000001,286,Northrop,2022-2023,4,286,2023/01/05 00:00:00+00,Snow Emergency,"222 W 32ND ST,Minneapolis,MN",44.944855,-93.281771,8,Lyndale,Powderhorn,2,5
+-93.2817699999999,44.9593,287,Northrop,2022-2023,4,287,2023/01/05 00:00:00+00,Snow Emergency,"2324 pillsbury ave s,Minneapolis,MN",44.9593,-93.28177,10,Whittier,Powderhorn,2,3
+-93.281444,44.9615410000001,288,Northrop,2022-2023,4,288,2023/01/05 00:00:00+00,Snow Emergency,"2104 Pillsbury Ave,Minneapolis,MN",44.961541,-93.281444,10,Whittier,Powderhorn,2,3
+-93.20929,44.93535,289,Northrop,2022-2023,4,289,2023/01/05 00:00:00+00,Snow Emergency,"3712 45th ave s,Minneapolis,MN",44.93535,-93.20929,12,Howe,Longfellow,2,6
+-93.292175,44.9372050000001,290,Northrop,2022-2023,4,290,2023/01/05 00:00:00+00,Snow Emergency,"3616 COLFAX AVE S,Minneapolis,MN",44.937205,-93.292175,10,East Harriet,Southwest,2,5
+-93.281375,44.962432,291,Northrop,2022-2023,4,291,2023/01/05 00:00:00+00,Snow Emergency,"2018 pillsbury ave s,Minneapolis,MN",44.962432,-93.281375,10,Whittier,Powderhorn,2,3
+-93.2844709999999,44.961015,292,Northrop,2022-2023,4,292,2023/01/05 00:00:00+00,Snow Emergency,"410 22nd st w,Minneapolis,MN",44.961015,-93.284471,10,Whittier,Powderhorn,2,3
+-93.28326,44.958,293,Northrop,2022-2023,4,293,2023/01/05 00:00:00+00,Snow Emergency,"2434 PLEASANT AVE ,Minneapolis,MN",44.958,-93.28326,10,Whittier,Powderhorn,2,3
+-93.29017,45.01568,294,Northrop,2022-2023,4,294,2023/01/05 00:00:00+00,Snow Emergency,"3322 Bryant ave n ,Minneapolis,MN",45.01568,-93.29017,4,McKinley,Camden,2,1
+-93.2494799999999,44.9905900000001,295,Northrop,2022-2023,4,295,2023/01/05 00:00:00+00,Snow Emergency,"718 2ND AVE SE,Minneapolis,MN",44.99059,-93.24948,3,Marcy Holmes,University,2,2
+-93.29017,45.0153100000001,296,Northrop,2022-2023,4,296,2023/01/05 00:00:00+00,Snow Emergency,"3310 Bryant ave n ,Minneapolis,MN",45.01531,-93.29017,4,McKinley,Camden,2,1
+-93.2493899999999,44.9907200000001,297,Northrop,2022-2023,4,297,2023/01/05 00:00:00+00,Snow Emergency,"724 2ND AVE SE,Minneapolis,MN",44.99072,-93.24939,3,Marcy Holmes,University,2,2
+-93.24951,44.99062,298,Northrop,2022-2023,4,298,2023/01/05 00:00:00+00,Snow Emergency,"714 2ND AVE SE,Minneapolis,MN",44.99062,-93.24951,3,Marcy Holmes,University,2,2
+-93.2846499999999,44.961015,299,Northrop,2022-2023,4,299,2023/01/05 00:00:00+00,Snow Emergency,"430 22nd ST W,Minneapolis,MN",44.961015,-93.28465,10,Whittier,Powderhorn,2,3
+-93.297025,44.9798430000001,300,Northrop,2022-2023,4,300,2023/01/05 00:00:00+00,Snow Emergency,"262 girard ave n,Minneapolis,MN",44.979843,-93.297025,5,Harrison,Near North,2,3
+-93.2375699999999,44.9334200000001,301,Northrop,2022-2023,4,301,2023/01/05 00:00:00+00,Snow Emergency,"3820 24th Ave s,Minneapolis,MN",44.93342,-93.23757,12,Standish,Powderhorn,2,6
+-93.24254,44.98537,302,Northrop,2022-2023,4,302,2023/01/05 00:00:00+00,Snow Emergency,"524 8th ave se,Minneapolis,MN",44.98537,-93.24254,3,Marcy Holmes,University,2,4
+-93.297025,44.979856,303,Northrop,2022-2023,4,303,2023/01/05 00:00:00+00,Snow Emergency,"264 girard ave n ,Minneapolis,MN",44.979856,-93.297025,5,Harrison,Near North,2,3
+-93.22534,44.9329900000001,304,Northrop,2022-2023,4,304,2023/01/05 00:00:00+00,Snow Emergency,"3838 Snelling Avenue South,Minneapolis,MN",44.93299,-93.22534,12,Howe,Longfellow,2,6
+-93.230115,44.94811,305,Northrop,2022-2023,4,305,2023/01/05 00:00:00+00,Snow Emergency,"3014 29th ave s,Minneapolis,MN",44.94811,-93.230115,2,Longfellow,Longfellow,2,6
+-93.22457,44.92623,306,Northrop,2022-2023,4,306,2023/01/05 00:00:00+00,Snow Emergency,"4208 33rd Avenue South,Minneapolis,MN",44.92623,-93.22457,12,Ericsson,Nokomis,2,6
+-93.248,44.98751,307,Northrop,2022-2023,4,307,2023/01/05 00:00:00+00,Snow Emergency,"410 6TH ST SE,Minneapolis,MN",44.98751,-93.248,3,Marcy Holmes,University,2,4
+-93.29092,44.9611100000001,308,Northrop,2022-2023,4,308,2023/01/05 00:00:00+00,Snow Emergency,"904 22ND ST W,Minneapolis,MN",44.96111,-93.29092,10,Lowry Hill East,Calhoun Isle,2,3
+-93.2373249999999,44.9339560000001,309,Northrop,2022-2023,4,309,2023/01/05 00:00:00+00,Snow Emergency,"3808 24th ave s,Minneapolis,MN",44.933956,-93.237325,12,Standish,Powderhorn,2,6
+-93.314475,45.0196470000001,310,Northrop,2022-2023,4,310,2023/01/05 00:00:00+00,Snow Emergency,"3554 UPTON AVE N,Minneapolis,MN",45.019647,-93.314475,4,Cleveland,Camden,2,1
+-93.314475,45.019709,311,Northrop,2022-2023,4,311,2023/01/05 00:00:00+00,Snow Emergency,"3558 UPTON AVE N,Minneapolis,MN",45.019709,-93.314475,4,Cleveland,Camden,2,1
+-93.24951,44.988389,312,Northrop,2022-2023,4,312,2023/01/05 00:00:00+00,Snow Emergency,"310 6TH ST SE,Minneapolis,MN",44.988389,-93.24951,3,Marcy Holmes,University,2,4
+-93.24394,44.98735,313,Northrop,2022-2023,4,313,2023/01/05 00:00:00+00,Snow Emergency,"618 7th st se,Minneapolis,MN",44.98735,-93.24394,3,Marcy Holmes,University,2,4
+-93.245943,44.986972,314,Northrop,2022-2023,4,314,2023/01/05 00:00:00+00,Snow Emergency,"508 6TH ST SE,Minneapolis,MN",44.986972,-93.245943,3,Marcy Holmes,University,2,4
+-93.2775329999999,44.943275,315,Northrop,2022-2023,4,315,2023/01/05 00:00:00+00,Snow Emergency,"36 E 33RD ST,Minneapolis,MN",44.943275,-93.277533,8,Lyndale,Powderhorn,2,5
+-93.2509879999999,44.9889590000001,316,Northrop,2022-2023,4,316,2023/01/05 00:00:00+00,Snow Emergency,"206 6TH ST SE,Minneapolis,MN",44.988959,-93.250988,3,Marcy Holmes,University,2,4
+-93.2935899999999,44.94386,317,Northrop,2022-2023,4,317,2023/01/05 00:00:00+00,Snow Emergency,"3226 Dupont Ave S,Minneapolis,MN",44.94386,-93.29359,10,South Uptown,Calhoun Isle,2,5
+-93.256425,44.946359,318,Northrop,2022-2023,4,318,2023/01/05 00:00:00+00,Snow Emergency,"3114 13th Avenue South,Minneapolis,MN",44.946359,-93.256425,9,Powderhorn Park,Powderhorn,2,6
+-93.294786,44.9430350000001,319,Northrop,2022-2023,4,319,2023/01/05 00:00:00+00,Snow Emergency,"1214 33rd St W,Minneapolis,MN",44.943035,-93.294786,10,South Uptown,Calhoun Isle,2,5
+-93.255165,44.9454480000001,320,Northrop,2022-2023,4,320,2023/01/05 00:00:00+00,Snow Emergency,"3136 14th Avenue South,Minneapolis,MN",44.945448,-93.255165,9,Powderhorn Park,Powderhorn,2,6
+-93.283202,45.013381,321,Northrop,2022-2023,4,321,2023/01/05 00:00:00+00,Snow Emergency,"3222 3RD ST N ,Minneapolis,MN",45.013381,-93.283202,4,McKinley,Camden,2,1
+-93.3004799999999,44.9471800000001,322,Northrop,2022-2023,4,322,2023/01/06 00:00:00+00,Snow Emergency,"3035 Humboldt ave s ,Minneapolis,MN",44.94718,-93.30048,10,East Bde Maka Ska,Calhoun Isle,3,5
+-93.290385,44.965626,323,Northrop,2022-2023,4,323,2023/01/06 00:00:00+00,Snow Emergency,"1787 bryant ave s ,Minneapolis,MN",44.965626,-93.290385,7,Lowry Hill,Calhoun Isle,3,3
+-93.2810679999999,44.9686550000001,324,Northrop,2022-2023,4,324,2023/01/06 00:00:00+00,Snow Emergency,"205 14TH ST W,Minneapolis,MN",44.968655,-93.281068,7,Loring Park,Central,3,3
+-93.25585,44.91862,325,Northrop,2022-2023,4,325,2023/01/06 00:00:00+00,Snow Emergency,"4633 13TH AVE S,Minneapolis,MN",44.91862,-93.25585,11,Northrop,Nokomis,3,6
+-93.296915,44.944919,326,Northrop,2022-2023,4,326,2023/01/06 00:00:00+00,Snow Emergency,"3143 GIRARD AVE S,Minneapolis,MN",44.944919,-93.296915,10,South Uptown,Calhoun Isle,3,5
+-93.3006559999999,44.947867,327,Northrop,2022-2023,4,327,2023/01/06 00:00:00+00,Snow Emergency,"3027 Humboldt Ave S,Minneapolis,MN",44.947867,-93.300656,10,East Bde Maka Ska,Calhoun Isle,3,5
+-93.28382,45.0019800000001,328,Northrop,2022-2023,4,328,2023/01/06 00:00:00+00,Snow Emergency,"2215 3rd st n mpls,Minneapolis,MN",45.00198,-93.28382,5,Hawthorne,Near North,3,1
+-93.28382,45.0020900000001,329,Northrop,2022-2023,4,329,2023/01/06 00:00:00+00,Snow Emergency,"2219 3rd st n mpls,Minneapolis,MN",45.00209,-93.28382,5,Hawthorne,Near North,3,1
+-93.2810679999999,44.9686550000001,330,Northrop,2022-2023,4,330,2023/01/06 00:00:00+00,Snow Emergency,"205 14TH ST W,Minneapolis,MN",44.968655,-93.281068,7,Loring Park,Central,3,3
+-93.29673,44.9408000000001,331,Northrop,2022-2023,4,331,2023/01/06 00:00:00+00,Snow Emergency,"3413 Girard ave s ,Minneapolis,MN",44.9408,-93.29673,10,South Uptown,Calhoun Isle,3,5
+-93.2928929999999,44.961557,332,Northrop,2022-2023,4,332,2023/01/06 00:00:00+00,Snow Emergency,"2125 Dupont Ave S,Minneapolis,MN",44.961557,-93.292893,7,Lowry Hill,Calhoun Isle,3,3
+-93.23421,44.987105,333,Northrop,2022-2023,4,333,2023/01/06 00:00:00+00,Snow Emergency,"1221 BROOK AVE SE,Minneapolis,MN",44.987105,-93.23421,2,Como,University,3,4
+-93.2806849999999,44.96941,334,Northrop,2022-2023,4,334,2023/01/06 00:00:00+00,Snow Emergency,"1367 SPRUCE PLACE ,Minneapolis,MN",44.96941,-93.280685,7,Loring Park,Central,3,3
+-93.23411,44.9872,335,Northrop,2022-2023,4,335,2023/01/06 00:00:00+00,Snow Emergency,"1201 BROOK AVE SE,Minneapolis,MN",44.9872,-93.23411,2,Como,University,3,4
+-93.28067,44.9690400000001,336,Northrop,2022-2023,4,336,2023/01/06 00:00:00+00,Snow Emergency,"1369 SPRUCE PL,Minneapolis,MN",44.96904,-93.28067,7,Loring Park,Central,3,3
+-93.2806849999999,44.9694470000001,337,Northrop,2022-2023,4,337,2023/01/06 00:00:00+00,Snow Emergency,"1359 SPRUCE PLACE ,Minneapolis,MN",44.969447,-93.280685,7,Loring Park,Central,3,3
+-93.24472,44.9483200000001,338,Northrop,2022-2023,4,338,2023/01/06 00:00:00+00,Snow Emergency,"3009 19th ave s,Minneapolis,MN",44.94832,-93.24472,9,Corcoran,Powderhorn,3,6
+-93.294302,44.945994,339,Northrop,2022-2023,4,339,2023/01/06 00:00:00+00,Snow Emergency,"3113 EMERSON AVE S,Minneapolis,MN",44.945994,-93.294302,10,South Uptown,Calhoun Isle,3,5
+-93.22901,44.9285550000001,340,Northrop,2022-2023,4,340,2023/01/06 00:00:00+00,Snow Emergency,"3017 41st Street East,Minneapolis,MN",44.928555,-93.22901,12,Standish,Powderhorn,3,6
+-93.23348,44.9862400000001,341,Northrop,2022-2023,4,341,2023/01/06 00:00:00+00,Snow Emergency,"917 13TH AVE SE,Minneapolis,MN",44.98624,-93.23348,2,Como,University,3,4
+-93.236753,44.928565,342,Northrop,2022-2023,4,342,2023/01/06 00:00:00+00,Snow Emergency,"2429 41st Street East,Minneapolis,MN",44.928565,-93.236753,12,Standish,Powderhorn,3,6
+-93.2841099999999,44.9669200000001,343,Northrop,2022-2023,4,343,2023/01/06 00:00:00+00,Snow Emergency,"333 OAK GROVE ST ,Minneapolis,MN",44.96692,-93.28411,7,Loring Park,Central,3,3
+-93.29421,44.9380200000001,344,Northrop,2022-2023,4,344,2023/01/06 00:00:00+00,Snow Emergency,"3549 Emerson ave s ,Minneapolis,MN",44.93802,-93.29421,10,South Uptown,Calhoun Isle,3,5
+-93.2806849999999,44.9694280000001,345,Northrop,2022-2023,4,345,2023/01/06 00:00:00+00,Snow Emergency,"1363 spruce pl,Minneapolis,MN",44.969428,-93.280685,7,Loring Park,Central,3,3
+-93.22878,44.9866270000001,346,Northrop,2022-2023,4,346,2023/01/06 00:00:00+00,Snow Emergency,"963 17TH AVE SE,Minneapolis,MN",44.986627,-93.22878,2,Como,University,3,4
+-93.29669,44.94419,347,Northrop,2022-2023,4,347,2023/01/06 00:00:00+00,Snow Emergency,"3217 girard ave s ,Minneapolis,MN",44.94419,-93.29669,10,South Uptown,Calhoun Isle,3,5
+-93.2548859999999,44.992512,348,Northrop,2022-2023,4,348,2023/01/06 00:00:00+00,Snow Emergency,"513 3RD AVE NE,Minneapolis,MN",44.992512,-93.254886,3,St. Anthony East,Northeast,3,2
+-93.2806849999999,44.9670400000001,349,Northrop,2022-2023,4,349,2023/01/06 00:00:00+00,Snow Emergency,"1531 spruce pl,Minneapolis,MN",44.96704,-93.280685,7,Loring Park,Central,3,3
+-93.2891499999999,44.94491,350,Northrop,2022-2023,4,350,2023/01/06 00:00:00+00,Snow Emergency,"3151 ALDRICH AVE S,Minneapolis,MN",44.94491,-93.28915,10,South Uptown,Calhoun Isle,3,5
+-93.2804,44.96716,351,Northrop,2022-2023,4,351,2023/01/06 00:00:00+00,Snow Emergency,"1515 SPRUCE PL,Minneapolis,MN",44.96716,-93.2804,7,Loring Park,Central,3,3
+-93.29428,44.9402700000001,352,Northrop,2022-2023,4,352,2023/01/06 00:00:00+00,Snow Emergency,"3445 Emerson Ave S,Minneapolis,MN",44.94027,-93.29428,10,South Uptown,Calhoun Isle,3,5
+-93.2206,44.9278800000001,353,Northrop,2022-2023,4,353,2023/01/06 00:00:00+00,Snow Emergency,"4129 Snelling Ave S,Minneapolis,MN",44.92788,-93.2206,12,Hiawatha,Longfellow,3,6
+-93.29428,44.9402900000001,354,Northrop,2022-2023,4,354,2023/01/06 00:00:00+00,Snow Emergency,"3441 Emerson Ave S,Minneapolis,MN",44.94029,-93.29428,10,South Uptown,Calhoun Isle,3,5
+-93.29157,44.94528,355,Northrop,2022-2023,4,355,2023/01/06 00:00:00+00,Snow Emergency,"3137 Colfax ave s ,Minneapolis,MN",44.94528,-93.29157,10,South Uptown,Calhoun Isle,3,5
+-93.29417,44.96423,356,Northrop,2022-2023,4,356,2023/01/06 00:00:00+00,Snow Emergency,"1901 Emerson ave s ,Minneapolis,MN",44.96423,-93.29417,7,Lowry Hill,Calhoun Isle,3,3
+-93.281799,44.9664070000001,357,Northrop,2022-2023,4,357,2023/01/06 00:00:00+00,Snow Emergency,"235 oak grove,Minneapolis,MN",44.966407,-93.281799,7,Loring Park,Central,3,3
+-93.29546,44.94057,358,Northrop,2022-2023,4,358,2023/01/06 00:00:00+00,Snow Emergency,"3421 FREMONT AVE S,Minneapolis,MN",44.94057,-93.29546,10,South Uptown,Calhoun Isle,3,5
+-93.240495,44.9463480000001,359,Northrop,2022-2023,4,359,2023/01/06 00:00:00+00,Snow Emergency,"3103 22nd Ave s,Minneapolis,MN",44.946348,-93.240495,9,Corcoran,Powderhorn,3,6
+-93.280138,44.966217,360,Northrop,2022-2023,4,360,2023/01/06 00:00:00+00,Snow Emergency,"117 oakgrove st,Minneapolis,MN",44.966217,-93.280138,7,Loring Park,Central,3,3
+-93.24008,44.94678,361,Northrop,2022-2023,4,361,2023/01/06 00:00:00+00,Snow Emergency,"3049 22nd Avenue South,Minneapolis,MN",44.94678,-93.24008,9,Corcoran,Powderhorn,3,6
+-93.2402979999999,44.9478,362,Northrop,2022-2023,4,362,2023/01/06 00:00:00+00,Snow Emergency,"3033 22nd ave so,Minneapolis,MN",44.9478,-93.240298,9,Corcoran,Powderhorn,3,6
+-93.25726,44.9926100000001,363,Northrop,2022-2023,4,363,2023/01/06 00:00:00+00,Snow Emergency,"327 4TH ST NE,Minneapolis,MN",44.99261,-93.25726,3,St. Anthony West,Northeast,3,2
+-93.2420999999999,44.8536800000001,364,Northrop,2022-2023,4,364,2023/01/06 00:00:00+00,Snow Emergency,"107114TH AVE SE,Minneapolis,MN",44.85368,-93.2421,0, , ,3,0
+-93.29603,44.9445850000001,365,Northrop,2022-2023,4,365,2023/01/06 00:00:00+00,Snow Emergency,"1309 W 32ND ST,Minneapolis,MN",44.944585,-93.29603,10,South Uptown,Calhoun Isle,3,5
+-93.24031,44.9478700000001,366,Northrop,2022-2023,4,366,2023/01/06 00:00:00+00,Snow Emergency,"3027 22nd Avenue South,Minneapolis,MN",44.94787,-93.24031,9,Corcoran,Powderhorn,3,6
+-93.283666,44.965287,367,Northrop,2022-2023,4,367,2023/01/06 00:00:00+00,Snow Emergency,"125 Clifton Ave ,Minneapolis,MN",44.965287,-93.283666,7,Loring Park,Central,3,3
+-93.280138,44.966217,368,Northrop,2022-2023,4,368,2023/01/06 00:00:00+00,Snow Emergency,"117 OAK GROVE ST,Minneapolis,MN",44.966217,-93.280138,7,Loring Park,Central,3,3
+-93.28007,44.9662190000001,369,Northrop,2022-2023,4,369,2023/01/06 00:00:00+00,Snow Emergency,"115 OAK GROVE ST ,Minneapolis,MN",44.966219,-93.28007,7,Loring Park,Central,3,3
+-93.27973,44.9662290000001,370,Northrop,2022-2023,4,370,2023/01/06 00:00:00+00,Snow Emergency,"105 oakgrove st,Minneapolis,MN",44.966229,-93.27973,7,Loring Park,Central,3,3
+-93.2837969999999,44.965246,371,Northrop,2022-2023,4,371,2023/01/06 00:00:00+00,Snow Emergency,"107 clifton,Minneapolis,MN",44.965246,-93.283797,7,Loring Park,Central,3,3
+-93.275135,44.9649620000001,372,Northrop,2022-2023,4,372,2023/01/06 00:00:00+00,Snow Emergency,"1809 Stevens ave s ,Minneapolis,MN",44.964962,-93.275135,6,Steven's Square - Loring Heights,Central,3,3
+-93.291804,44.9408310000001,373,Northrop,2022-2023,4,373,2023/01/06 00:00:00+00,Snow Emergency,"3411 Colfax ave s,Minneapolis,MN",44.940831,-93.291804,10,South Uptown,Calhoun Isle,3,5
+-93.288428,44.9445850000001,374,Northrop,2022-2023,4,374,2023/01/06 00:00:00+00,Snow Emergency,"719 W 32ND ST,Minneapolis,MN",44.944585,-93.288428,10,South Uptown,Calhoun Isle,3,5
+-93.275135,44.964884,375,Northrop,2022-2023,4,375,2023/01/06 00:00:00+00,Snow Emergency,"1817 Stevens Ave s,Minneapolis,MN",44.964884,-93.275135,6,Steven's Square - Loring Heights,Central,3,3
+-93.2916,44.94341,376,Northrop,2022-2023,4,376,2023/01/06 00:00:00+00,Snow Emergency,"3241 COLFAX AVE S,Minneapolis,MN",44.94341,-93.2916,10,South Uptown,Calhoun Isle,3,5
+-93.2589599999999,44.9948400000001,377,Northrop,2022-2023,4,377,2023/01/06 00:00:00+00,Snow Emergency,"521 4TH ST NE,Minneapolis,MN",44.99484,-93.25896,3,St. Anthony West,Northeast,3,2
+-93.29164,44.9464100000001,378,Northrop,2022-2023,4,378,2023/01/06 00:00:00+00,Snow Emergency,"3103 Colfax Ave S,Minneapolis,MN",44.94641,-93.29164,10,South Uptown,Calhoun Isle,3,5
+-93.282979,44.9637080000001,379,Northrop,2022-2023,4,379,2023/01/06 00:00:00+00,Snow Emergency,"301 RIDGEWOOD AVE S ,Minneapolis,MN",44.963708,-93.282979,7,Steven's Square - Loring Heights,Central,3,3
+-93.293145,44.9403120000001,380,Northrop,2022-2023,4,380,2023/01/06 00:00:00+00,Snow Emergency,"3453 dupont ave s,Minneapolis,MN",44.940312,-93.293145,10,South Uptown,Calhoun Isle,3,5
+-93.282785,44.962519,381,Northrop,2022-2023,4,381,2023/01/06 00:00:00+00,Snow Emergency,"2003 pleasant ave s ,Minneapolis,MN",44.962519,-93.282785,10,Whittier,Powderhorn,3,3
+-93.281105,44.962179,382,Northrop,2022-2023,4,382,2023/01/06 00:00:00+00,Snow Emergency,"2009 pillsbury ave,Minneapolis,MN",44.962179,-93.281105,10,Whittier,Powderhorn,3,3
+-93.28962,45.00971,383,Northrop,2022-2023,4,383,2023/01/06 00:00:00+00,Snow Emergency,"2903 Aldrich ave n mpls,Minneapolis,MN",45.00971,-93.28962,5,Hawthorne,Near North,3,1
+-93.28207,44.9635500000001,384,Northrop,2022-2023,4,384,2023/01/06 00:00:00+00,Snow Emergency,"217 Ridgewood ,Minneapolis,MN",44.96355,-93.28207,7,Steven's Square - Loring Heights,Central,3,3
+-93.29779,44.9650100000001,385,Northrop,2022-2023,4,385,2023/01/06 00:00:00+00,Snow Emergency,"1809 Humboldt ave s,Minneapolis,MN",44.96501,-93.29779,7,Lowry Hill,Calhoun Isle,3,3
+-93.2757089999999,44.9637960000001,386,Northrop,2022-2023,4,386,2023/01/06 00:00:00+00,Snow Emergency,"119 19th st e,Minneapolis,MN",44.963796,-93.275709,6,Steven's Square - Loring Heights,Central,3,3
+-93.21619,44.9472900000001,387,Northrop,2022-2023,4,387,2023/01/06 00:00:00+00,Snow Emergency,"3031 39th Avenue South,Minneapolis,MN",44.94729,-93.21619,2,Cooper,Longfellow,3,6
+-93.21621,44.9299,388,Northrop,2022-2023,4,388,2023/01/06 00:00:00+00,Snow Emergency,"4019 39th ave S,Minneapolis,MN",44.9299,-93.21621,12,Hiawatha,Longfellow,3,6
+-93.24679,44.985282,389,Northrop,2022-2023,4,389,2023/01/06 00:00:00+00,Snow Emergency,"421 6TH AVE SE,Minneapolis,MN",44.985282,-93.24679,3,Marcy Holmes,University,3,4
+-93.24573,44.9419600000001,390,Northrop,2022-2023,4,390,2023/01/06 00:00:00+00,Snow Emergency,"3325 Longfellow ave s,Minneapolis,MN",44.94196,-93.24573,9,Corcoran,Powderhorn,3,6
+-93.29599,44.9620100000001,391,Northrop,2022-2023,4,391,2023/01/06 00:00:00+00,Snow Emergency,"2018 FREMONT AVE S ,Minneapolis,MN",44.96201,-93.29599,7,Lowry Hill,Calhoun Isle,3,3
+-93.257891,44.995665,392,Northrop,2022-2023,4,392,2023/01/06 00:00:00+00,Snow Emergency,"611 5TH ST NE,Minneapolis,MN",44.995665,-93.257891,3,St. Anthony West,Northeast,3,2
+-93.228555,44.9476520000001,393,Northrop,2022-2023,4,393,2023/01/06 00:00:00+00,Snow Emergency,"3022 30th Ave S,Minneapolis,MN",44.947652,-93.228555,2,Longfellow,Longfellow,3,6
+-93.28207,44.9635500000001,394,Northrop,2022-2023,4,394,2023/01/06 00:00:00+00,Snow Emergency,"223 Ridgewood Ave S,Minneapolis,MN",44.96355,-93.28207,7,Steven's Square - Loring Heights,Central,3,3
+-93.2811349999999,44.959278,395,Northrop,2022-2023,4,395,2023/01/06 00:00:00+00,Snow Emergency,"2323 pillsbury ave,Minneapolis,MN",44.959278,-93.281135,10,Whittier,Powderhorn,3,3
+-93.28254,44.9462600000001,396,Northrop,2022-2023,4,396,2023/01/06 00:00:00+00,Snow Emergency,"3105 pleasant ave s ,Minneapolis,MN",44.94626,-93.28254,8,Lyndale,Powderhorn,3,5
+-93.213875,44.941803,397,Northrop,2022-2023,4,397,2023/01/06 00:00:00+00,Snow Emergency,"3341 41st Avenue South,Minneapolis,MN",44.941803,-93.213875,2,Cooper,Longfellow,3,6
+-93.28081,44.9601700000001,398,Northrop,2022-2023,4,398,2023/01/06 00:00:00+00,Snow Emergency,"2219 pillsbury,Minneapolis,MN",44.96017,-93.28081,10,Whittier,Powderhorn,3,3
+-93.296775,45.0448460000001,399,Northrop,2022-2023,4,399,2023/01/06 00:00:00+00,Snow Emergency,"4923 FREMONT AVE N,Minneapolis,MN",45.044846,-93.296775,4,Lind - Bohanon,Camden,3,1
+-93.2331599999999,44.99177,400,Northrop,2022-2023,4,400,2023/01/06 00:00:00+00,Snow Emergency,"319 GARFIELD ST NE ,Minneapolis,MN",44.99177,-93.23316,1,Como,University,3,2
+-93.296775,45.045871,401,Northrop,2022-2023,4,401,2023/01/06 00:00:00+00,Snow Emergency,"5003 FREMONT AVE N,Minneapolis,MN",45.045871,-93.296775,4,Lind - Bohanon,Camden,3,1
+-93.2940399999999,44.96063,402,Northrop,2022-2023,4,402,2023/01/06 00:00:00+00,Snow Emergency,"1111 22nd st w,Minneapolis,MN",44.96063,-93.29404,7,East Isles,Calhoun Isle,3,3
+-93.2892649999999,44.9458440000001,403,Northrop,2022-2023,4,403,2023/01/06 00:00:00+00,Snow Emergency,"3107 Aldrich ave s ,Minneapolis,MN",44.945844,-93.289265,10,South Uptown,Calhoun Isle,3,5
+-93.2828949999999,44.94699,404,Northrop,2022-2023,4,404,2023/01/06 00:00:00+00,Snow Emergency,"3039 PLEASANT AVE ,Minneapolis,MN",44.94699,-93.282895,8,Lyndale,Powderhorn,3,5
+-93.2822399999999,44.95953,405,Northrop,2022-2023,4,405,2023/01/06 00:00:00+00,Snow Emergency,"2317 pleasant ave,Minneapolis,MN",44.95953,-93.28224,10,Whittier,Powderhorn,3,3
+-93.230895,44.99105,406,Northrop,2022-2023,4,406,2023/01/06 00:00:00+00,Snow Emergency,"1105 15TH AVE SE,Minneapolis,MN",44.99105,-93.230895,1,Como,University,3,4
+-93.269975,45.0128940000001,407,Northrop,2022-2023,4,407,2023/01/06 00:00:00+00,Snow Emergency,"2425 GRAND ST NE,Minneapolis,MN",45.012894,-93.269975,3,Bottineau,Northeast,3,2
+-93.24092,44.98681,408,Northrop,2022-2023,4,408,2023/01/06 00:00:00+00,Snow Emergency,"813 7TH ST SE,Minneapolis,MN",44.98681,-93.24092,3,Marcy Holmes,University,3,4
+-93.2825,44.96196,409,Northrop,2022-2023,4,409,2023/01/06 00:00:00+00,Snow Emergency,"2017 pleasant ,Minneapolis,MN",44.96196,-93.2825,10,Whittier,Powderhorn,3,3
+-93.29088,45.0078600000001,410,Northrop,2022-2023,4,410,2023/01/06 00:00:00+00,Snow Emergency,"2701 Bryant Ave n mpls ,Minneapolis,MN",45.00786,-93.29088,5,Hawthorne,Near North,3,1
+-93.281235,44.94573,411,Northrop,2022-2023,4,411,2023/01/06 00:00:00+00,Snow Emergency,"3129 PILLSBURY AVE ,Minneapolis,MN",44.94573,-93.281235,8,Lyndale,Powderhorn,3,5
+-93.2870569999999,44.9607550000001,412,Northrop,2022-2023,4,412,2023/01/06 00:00:00+00,Snow Emergency,"621 22ND ST W,Minneapolis,MN",44.960755,-93.287057,10,Whittier,Powderhorn,3,3
+-93.2892399999999,45.0441000000001,413,Northrop,2022-2023,4,413,2023/01/06 00:00:00+00,Snow Emergency,"4903 CAMDEN AVE N,Minneapolis,MN",45.0441,-93.28924,4,Lind - Bohanon,Camden,3,1
+-93.284453,44.960745,414,Northrop,2022-2023,4,414,2023/01/06 00:00:00+00,Snow Emergency,"409 22nd st w,Minneapolis,MN",44.960745,-93.284453,10,Whittier,Powderhorn,3,3
+-93.282785,44.9625040000001,415,Northrop,2022-2023,4,415,2023/01/06 00:00:00+00,Snow Emergency,"2005 pleasant ave ,Minneapolis,MN",44.962504,-93.282785,10,Whittier,Powderhorn,3,3
+-93.28925,45.04121,416,Northrop,2022-2023,4,416,2023/01/06 00:00:00+00,Snow Emergency,"4731 CAMDEN AVE N,Minneapolis,MN",45.04121,-93.28925,4,Lind - Bohanon,Camden,3,1
+-93.284055,44.962427,417,Northrop,2022-2023,4,417,2023/01/06 00:00:00+00,Snow Emergency,"2015 grand Ave s ,Minneapolis,MN",44.962427,-93.284055,10,Whittier,Powderhorn,3,3
+-93.259806,45.0031970000001,418,Northrop,2022-2023,4,418,2023/01/06 00:00:00+00,Snow Emergency,"%MNNEW PRAGUE^HENDERSON$JACOB$AARON^501 CHALUPSKY AVE SE^?;63603820850525 15TH AVE NE,Minneapolis,MN",45.003197,-93.259806,3,Sheridan,Northeast,3,2
+-93.284597,44.960745,419,Northrop,2022-2023,4,419,2023/01/06 00:00:00+00,Snow Emergency,"425 22NS ST W,Minneapolis,MN",44.960745,-93.284597,10,Whittier,Powderhorn,3,3
+-93.2368,44.9367500000001,420,Northrop,2022-2023,4,420,2023/01/06 00:00:00+00,Snow Emergency,"3625 24th Avenue South,Minneapolis,MN",44.93675,-93.2368,12,Standish,Powderhorn,3,6
+-93.256165,44.947755,421,Northrop,2022-2023,4,421,2023/01/06 00:00:00+00,Snow Emergency,"3025 13th Avenue South,Minneapolis,MN",44.947755,-93.256165,9,Powderhorn Park,Powderhorn,3,6
+-93.278018,44.9607550000001,422,Northrop,2022-2023,4,422,2023/01/06 00:00:00+00,Snow Emergency,"5 22ND ST W,Minneapolis,MN",44.960755,-93.278018,10,Whittier,Powderhorn,3,3
+-93.28254,44.9459900000001,423,Northrop,2022-2023,4,423,2023/01/06 00:00:00+00,Snow Emergency,"3113 PLEASANT AVE ,Minneapolis,MN",44.94599,-93.28254,8,Lyndale,Powderhorn,3,5
+-93.28088,44.94368,424,Northrop,2022-2023,4,424,2023/01/06 00:00:00+00,Snow Emergency,"3233 Pillsbury ave s ,Minneapolis,MN",44.94368,-93.28088,8,Lyndale,Powderhorn,3,5
+-93.29958,44.9788300000001,425,Northrop,2022-2023,4,425,2023/01/06 00:00:00+00,Snow Emergency,"229 irving ave n,Minneapolis,MN",44.97883,-93.29958,5,Harrison,Near North,3,3
+-93.3072569999999,44.989535,426,Northrop,2022-2023,4,426,2023/01/06 00:00:00+00,Snow Emergency,"2109 12th ave n,Minneapolis,MN",44.989535,-93.307257,5,Near - North,Near North,3,1
+-93.235442,44.9857490000001,427,Northrop,2022-2023,4,427,2023/01/06 00:00:00+00,Snow Emergency,"807 12TH AVE SE,Minneapolis,MN",44.985749,-93.235442,3,Marcy Holmes,University,3,4
+-93.2870799999999,44.9607550000001,428,Northrop,2022-2023,4,428,2023/01/06 00:00:00+00,Snow Emergency,"625 22st w,Minneapolis,MN",44.960755,-93.28708,10,Whittier,Powderhorn,3,3
+-93.2047899999999,44.9055300000001,429,Northrop,2022-2023,4,429,2023/01/06 00:00:00+00,Snow Emergency,"5349 48th ave s,Minneapolis,MN",44.90553,-93.20479,12,Minnehaha,Nokomis,3,6
+-93.2586699999999,45.0032150000001,430,Northrop,2022-2023,4,430,2023/01/06 00:00:00+00,Snow Emergency,"601 15TH AVE NE,Minneapolis,MN",45.003215,-93.25867,3,Sheridan,Northeast,3,2
+-93.284595,44.9972550000001,431,Northrop,2022-2023,4,431,2023/01/06 00:00:00+00,Snow Emergency,"405 18TH AVE N,Minneapolis,MN",44.997255,-93.284595,5,Near - North,Near North,3,1
+-93.284543,44.9972550000001,432,Northrop,2022-2023,4,432,2023/01/06 00:00:00+00,Snow Emergency,"403 18TH AVE N,Minneapolis,MN",44.997255,-93.284543,5,Near - North,Near North,3,1
+-93.278035,44.9607550000001,433,Northrop,2022-2023,4,433,2023/01/06 00:00:00+00,Snow Emergency,"9 22ND ST W,Minneapolis,MN",44.960755,-93.278035,10,Whittier,Powderhorn,3,3
+-93.2851899999999,44.9476900000001,434,Northrop,2022-2023,4,434,2023/01/06 00:00:00+00,Snow Emergency,"3017 HARRIET AVE ,Minneapolis,MN",44.94769,-93.28519,8,Lyndale,Powderhorn,3,5
+-93.29786,44.9427850000001,435,Northrop,2022-2023,4,435,2023/01/06 00:00:00+00,Snow Emergency,"1419 w 33rd st,Minneapolis,MN",44.942785,-93.29786,10,South Uptown,Calhoun Isle,3,5
+-93.2914479999999,44.9845760000001,436,Northrop,2022-2023,4,436,2023/01/06 00:00:00+00,Snow Emergency,"627 BRYANT AVE N,Minneapolis,MN",44.984576,-93.291448,5,Sumner - Glenwood,Near North,3,1
+-93.29578,44.9791080000001,437,Northrop,2022-2023,4,437,2023/01/06 00:00:00+00,Snow Emergency,"111 FREMONT AVE N,Minneapolis,MN",44.979108,-93.29578,5,Harrison,Near North,3,3
+-93.256541,45.0032150000001,438,Northrop,2022-2023,4,438,2023/01/06 00:00:00+00,Snow Emergency,"639 15th ave ne,Minneapolis,MN",45.003215,-93.256541,1,Logan Park,Northeast,3,2
+-93.2356789999999,45.011218,439,Northrop,2022-2023,4,439,2023/01/06 00:00:00+00,Snow Emergency,"2301 ULYSSES ST NE,Minneapolis,MN",45.011218,-93.235679,1,Windom Park,Northeast,3,2
+-93.22065,44.98515,440,Northrop,2022-2023,4,440,2023/01/06 00:00:00+00,Snow Emergency,"851 23RD AVE SE,Minneapolis,MN",44.98515,-93.22065,2,Como,University,3,4
+-93.28712,44.9427650000001,441,Northrop,2022-2023,4,441,2023/01/06 00:00:00+00,Snow Emergency,"611 W 33RD ST,Minneapolis,MN",44.942765,-93.28712,8,Lyndale,Powderhorn,3,5
+-93.2047699999999,44.90576,442,Northrop,2022-2023,4,442,2023/01/06 00:00:00+00,Snow Emergency,"5341 48th Avenue South,Minneapolis,MN",44.90576,-93.20477,12,Minnehaha,Nokomis,3,6
+-93.2824899999999,44.95518,443,Northrop,2022-2023,4,443,2023/01/06 00:00:00+00,Snow Emergency,"2611 pleasant ave s ,Minneapolis,MN",44.95518,-93.28249,10,Whittier,Powderhorn,3,3
+-93.20471,44.9059800000001,444,Northrop,2022-2023,4,444,2023/01/06 00:00:00+00,Snow Emergency,"5333 48th Avenue South,Minneapolis,MN",44.90598,-93.20471,12,Minnehaha,Nokomis,3,6
+-93.2251439999999,44.98616,445,Northrop,2022-2023,4,445,2023/01/06 00:00:00+00,Snow Emergency,"1925 FAIRMONT ST SE,Minneapolis,MN",44.98616,-93.225144,2,Como,University,3,4
+-93.27986,44.9607550000001,446,Northrop,2022-2023,4,446,2023/01/06 00:00:00+00,Snow Emergency,"107 22nd ST W,Minneapolis,MN",44.960755,-93.27986,10,Whittier,Powderhorn,3,3
+-93.2815679999999,44.9607550000001,447,Northrop,2022-2023,4,447,2023/01/06 00:00:00+00,Snow Emergency,"211 22nd ST W,Minneapolis,MN",44.960755,-93.281568,10,Whittier,Powderhorn,3,3
+-93.292336,44.941445,448,Northrop,2022-2023,4,448,2023/01/06 00:00:00+00,Snow Emergency,"1028 w 34th st,Minneapolis,MN",44.941445,-93.292336,10,South Uptown,Calhoun Isle,3,5
+-93.2815679999999,44.9607550000001,449,Northrop,2022-2023,4,449,2023/01/06 00:00:00+00,Snow Emergency,"211 22nd ST W,Minneapolis,MN",44.960755,-93.281568,10,Whittier,Powderhorn,3,3
+-93.2072929999999,44.9088750000001,450,Northrop,2022-2023,4,450,2023/01/06 00:00:00+00,Snow Emergency,"4609 52nd st e,Minneapolis,MN",44.908875,-93.207293,12,Minnehaha,Nokomis,3,6
+-93.29052,45.0406800000001,451,Northrop,2022-2023,4,451,2023/01/06 00:00:00+00,Snow Emergency,"4711 Aldrich ave n mpls,Minneapolis,MN",45.04068,-93.29052,4,Lind - Bohanon,Camden,3,1
+-93.30326,45.00197,452,Northrop,2022-2023,4,452,2023/01/06 00:00:00+00,Snow Emergency,"2205 ILLION AVE N,Minneapolis,MN",45.00197,-93.30326,5,Jordan,Near North,3,1
+-93.2989909999999,45.000125,453,Northrop,2022-2023,4,453,2023/01/06 00:00:00+00,Snow Emergency,"1405 HILLSIDE AVE N,Minneapolis,MN",45.000125,-93.298991,5,Jordan,Near North,3,1
+-93.215412,44.987133,454,Northrop,2022-2023,4,454,2023/01/06 00:00:00+00,Snow Emergency,"931 27TH AVE SE,Minneapolis,MN",44.987133,-93.215412,2,Como,University,3,4
+-93.2268529999999,44.937625,455,Northrop,2022-2023,4,455,2023/01/06 00:00:00+00,Snow Emergency,"3109 36th st e,Minneapolis,MN",44.937625,-93.226853,12,Howe,Longfellow,3,6
+-93.262846,45.0043250000001,456,Northrop,2022-2023,4,456,2023/01/06 00:00:00+00,Snow Emergency,"337 16H AVE NE,Minneapolis,MN",45.004325,-93.262846,3,Sheridan,Northeast,3,2
+-93.2168,44.98839,457,Northrop,2022-2023,4,457,2023/01/06 00:00:00+00,Snow Emergency,"1011 26TH AVE SE,Minneapolis,MN",44.98839,-93.2168,1,Como,University,3,4
+-93.273672,44.9412150000001,458,Northrop,2022-2023,4,458,2023/01/06 00:00:00+00,Snow Emergency,"221 E 34TH ST,Minneapolis,MN",44.941215,-93.273672,9,Central,Powderhorn,3,5
+-93.307448,44.9814410000001,459,Northrop,2022-2023,4,459,2023/01/06 00:00:00+00,Snow Emergency,"2123 4TH AVE N,Minneapolis,MN",44.981441,-93.307448,5,Harrison,Near North,3,3
+-93.283831,45.0070250000001,460,Northrop,2022-2023,4,460,2023/01/06 00:00:00+00,Snow Emergency,"321 27TH AVE N,Minneapolis,MN",45.007025,-93.283831,5,Hawthorne,Near North,3,1
+-93.23455,44.9848500000001,461,Northrop,2022-2023,4,461,2023/01/06 00:00:00+00,Snow Emergency,"723 13th AVE SE,Minneapolis,MN",44.98485,-93.23455,3,Marcy Holmes,University,3,4
+-93.2305499999999,44.9130500000001,462,Northrop,2022-2023,4,462,2023/01/06 00:00:00+00,Snow Emergency,"4945 29th Avenue South,Minneapolis,MN",44.91305,-93.23055,12,Keewaydin,Nokomis,3,6
+-93.231594,44.9428150000001,463,Northrop,2022-2023,4,463,2023/01/06 00:00:00+00,Snow Emergency,"2827 33rd st e,Minneapolis,MN",44.942815,-93.231594,9,Longfellow,Longfellow,3,6
+-93.23445,44.90615,464,Northrop,2022-2023,4,464,2023/01/06 00:00:00+00,Snow Emergency,"5333 26th Avenue South,Minneapolis,MN",44.90615,-93.23445,11,Keewaydin,Nokomis,3,6
+-93.272009,44.9394350000001,465,Northrop,2022-2023,4,465,2023/01/06 00:00:00+00,Snow Emergency,"315 E 35TH ST,Minneapolis,MN",44.939435,-93.272009,9,Central,Powderhorn,3,5

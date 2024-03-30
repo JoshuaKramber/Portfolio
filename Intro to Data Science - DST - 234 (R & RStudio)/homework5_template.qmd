@@ -1,0 +1,71 @@
+---
+title: "Homework 5"
+author: "YOUR NAME HERE"
+format: html
+editor: visual
+---
+
+```{r}
+#| echo: false
+#| message: false
+
+library(mdsr)
+library(tidyverse)
+```
+
+### 1. Exercise 3.5.2
+
+Using data from the `nasaweather` package, create a scatterplot between `wind` and `pressure`, with `color` being used to distinguish the type of storm.
+
+**Answer:**
+
+```{r}
+# Call in the data from the nasaweather pacakge
+# NOTE: there is additional work to be done for this problem!
+
+
+ggplot(data = nasaweather::storms) +
+  geom_point( aes(x=wind, y=pressure, color = type) ) + labs(title = "Pressure vs Wind in different Types of tropical storms")
+```
+
+### 2. Exercise 3.5.3
+
+**Answer:**
+
+```{r}
+library(mosaicData)
+#A
+ggplot(data = Marriage) + geom_point(aes(x = sign, y = prevcount, color = race)) + labs(title = "Astral Sign vs Previous Marriage count split by Race")
+
+#B
+#I thought that it would be interesting to see which signs have the highest count of marriages! I threw in race and found it interesting that it is mostly white people in the stats for this (although now I am scared because my gf is a saggitarius hahaha)
+
+#C
+ggplot(data = Marriage) + geom_point(aes(x = dob, y = appdate, color = race, shape = sign, size = college)) + labs(title = "Lots of different variables smashed together")
+```
+
+### 3. Exercise 3.5.4
+
+**Answer:**
+
+```{r}
+library(tidyverse)
+library(macleish)
+ggplot(data = whately_2015) + geom_smooth(aes(x = when, y = temperature)) + labs(title = "Avg Temperature over 10 minute spans")
+```
+
+### 4. Exercise 3.5.7
+
+**Answer:**
+
+```{r}
+#A
+glimpse(RailTrail)
+ggplot(data = RailTrail) + geom_point(aes(x = avgtemp, y = volume)) + labs(title = "Volume of Crossings vs avg Temperature")
+
+#B
+ggplot(data = RailTrail) + geom_point(aes(x = avgtemp, y = volume)) + facet_grid(weekday ~ .) + labs(title = "Volume of Crossings vs avg Temperature split by Weekday vs Weekend")
+
+#C
+ggplot(data = RailTrail) + geom_point(aes(x = avgtemp, y = volume)) + facet_grid(weekday ~ .) + geom_smooth(aes(x = avgtemp, y = volume), se = FALSE) + labs(title = "Volume of Crossings vs avg Temperature (w/ Regression Lines)")
+```

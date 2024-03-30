@@ -1,0 +1,91 @@
+---
+title: "Homework20"
+format: html
+editor: visual
+---
+
+Question 1:
+
+I think the shape adding functions could be kinda cool. I play a lot of video games and normally in said games, there will be a quest area instead of a distinct marker. So the game will say "hey there is a person you have to talk to in x village" and then that area will have a circle surrounding it. This indicates the general area of the quest person.
+
+Question 2:
+
+```{r}
+library(tidyverse)
+library(ggmap)   # Making google maps
+library(leaflet) # Making dynamic maps
+
+ggmap::register_google(key = "AIzaSyDF2lhaUWIHuwxVhfHvIqwhuEvhT7CwEBo")
+
+augsburg <- "2211 Riverside Avenue, Minneapolis, 55454"
+auggieUniv <- geocode(augsburg)  # Return the lat/long of the location
+
+home <- "1773 Kestrel Circle, Buffalo, MN, 55313"    # My hometown
+myHome <- geocode(home)  # Return the lat/long
+
+work <- "3800 County Rd 116, Medina, MN 55340"    # My hometown
+myWork <- geocode(work)  # Return the lat/long
+
+gfHome <- "202 13th St S, Buffalo, MN 55313"    # My hometown
+mygfHome <- geocode(gfHome)  # Return the lat/long
+
+highschool <- "877 Bison Blvd, Buffalo, MN 55313"    # My hometown
+myHighschool <- geocode(highschool)  # Return the lat/long
+
+leaflet() |>
+  addTiles() |>
+  addMarkers(lng = ~lon, lat = ~lat, data=auggieUniv) |>
+  addPopups(lng = ~lon, lat = ~lat, data = auggieUniv, popup = "Augsburg") |>
+  addMarkers(lng = ~lon, lat = ~lat, data=myHome) |>
+  addPopups(lng = ~lon, lat = ~lat, data = myHome, popup = "Josh's House")|>
+  addMarkers(lng = ~lon, lat = ~lat, data=myWork) |>
+  addPopups(lng = ~lon, lat = ~lat, data = myWork, popup = "Josh's Work")|>
+  addMarkers(lng = ~lon, lat = ~lat, data=mygfHome) |>
+  addPopups(lng = ~lon, lat = ~lat, data = mygfHome, popup = "Josh's GF House")|>
+  addMarkers(lng = ~lon, lat = ~lat, data=myHighschool) |>
+  addPopups(lng = ~lon, lat = ~lat, data = myHighschool, popup = "Josh's Highschool") |> addRectangles(
+    lng1=-93.9, lat1=45.25,
+    lng2=-93.2, lat2=44.9,
+    fillColor = "green", opacity = 0.5
+  ) 
+
+```
+
+Question 3:
+
+```{r}
+
+library(tidyverse)
+library(ggmap)   # Making google maps
+library(leaflet) # Making dynamic maps
+
+ggmap::register_google(key = "AIzaSyDF2lhaUWIHuwxVhfHvIqwhuEvhT7CwEBo")
+
+augsburg <- "2211 Riverside Avenue, Minneapolis, 55454"
+auggieUniv <- geocode(augsburg)  # Return the lat/long of the location
+
+tower <- "1773 Kestrel Circle, Buffalo, MN, 55313"    # My hometown
+myHome <- geocode(tower)  # Return the lat/long
+
+distance <- mapdist(from=tower, to=augsburg, mode="driving")
+#the distance is roughly 45 miles
+#for this i used the driving route since my house is roughly an hour away.
+
+
+myRoute <- route(tower,augsburg,alternatives = TRUE) |> filter(route=="A")
+
+leaflet() |>
+  addTiles() |>
+  addMarkers(lng = ~lon, lat = ~lat, data=auggieUniv) |>
+  addPopups(lng = ~lon, lat = ~lat, data = auggieUniv, popup = "Josh's College") |>
+  addMarkers(lng = ~lon, lat = ~lat, data=myHome) |>
+  addPopups(lng = ~lon, lat = ~lat, data = myHome, popup = "Josh's hometown") |>
+  addPolylines(data = myRoute,lat = ~start_lat, lng = ~start_lon)
+
+```
+
+Question 4:
+
+The documentaries covered the history of redlining and racial covenants in Minneapolis between 1910-1950ish.
+
+I learned that the city would red line neighborhoods based mostly on race and other discriminatory factors. Then they would destroy the neighborhoods in order to put freeways and highways there. 94 is a good example of this that we talked about in class. I also learned about stories where a black family moved into prospect park and around 6 thousand white people protested there because of it. We also talked about racial covenants and how they worked (ie. putting a racial clause in the deed of the property) but also how people were essentially unable to fight these clauses because of a legal loophole.

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Mini Project 4</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="Mini_Project_4_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Mini_Project_4_files/libs/quarto-html/quarto.js"></script>
+<script src="Mini_Project_4_files/libs/quarto-html/popper.min.js"></script>
+<script src="Mini_Project_4_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Mini_Project_4_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Mini_Project_4_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Mini_Project_4_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Mini_Project_4_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Mini_Project_4_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Mini_Project_4_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="Mini_Project_4_files/libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="Mini_Project_4_files/libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="Mini_Project_4_files/libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="Mini_Project_4_files/libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="Mini_Project_4_files/libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="Mini_Project_4_files/libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="Mini_Project_4_files/libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="Mini_Project_4_files/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="Mini_Project_4_files/libs/leaflet-binding-2.2.0/leaflet.js"></script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mini Project 4</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="mini-project-4" class="level2">
+<h2 class="anchored" data-anchor-id="mini-project-4">Mini Project 4</h2>
+<p>I chose to explore where arson charges happened in Minneapolis. So I put the area of Minneapolis on the map and then placed the arson events on that map. I don’t think this solves anything though, besides being a cool and fun graphic!</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.3     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.3     ✔ tibble    3.2.1
+✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)     <span class="co"># R wrapper around GDAL/OGR</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Linking to GEOS 3.11.2, GDAL 3.6.2, PROJ 9.2.0; sf_use_s2() is TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)    <span class="co"># for fortifying shapefiles</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'leaflet' was built under R version 4.3.2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet.extras)   <span class="co"># For leaflet heatmaps</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'leaflet.extras' was built under R version 4.3.2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggmap)   <span class="co"># Making google maps</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>ℹ Google's Terms of Service: &lt;https://mapsplatform.google.com&gt;
+ℹ Please cite ggmap if you use it! Use `citation("ggmap")` for details.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>city_boundry <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="at">dsn =</span> <span class="st">"~/DST 234 Files/City_Boundary-shp"</span>, <span class="at">layer =</span> <span class="st">"16cdbbfa-ad10-493c-afaf-52b61f2e76e42020329-1-180h9ap.whbo"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Reading layer `16cdbbfa-ad10-493c-afaf-52b61f2e76e42020329-1-180h9ap.whbo' from data source `C:\Users\kramb\Documents\DST 234 Files\City_Boundary-shp' 
+  using driver `ESRI Shapefile'
+Simple feature collection with 1 feature and 4 fields
+Geometry type: POLYGON
+Dimension:     XY
+Bounding box:  xmin: -93.32911 ymin: 44.89059 xmax: -93.19433 ymax: 45.05125
+Geodetic CRS:  WGS 84</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>police_data <span class="ot">&lt;-</span> mn_1937 <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="at">dsn =</span> <span class="st">"~/DST 234 Files/Police_Incidents_2023"</span>, <span class="at">layer =</span> <span class="st">"Police_Incidents_2023"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Reading layer `Police_Incidents_2023' from data source 
+  `C:\Users\kramb\Documents\DST 234 Files\Police_Incidents_2023' 
+  using driver `ESRI Shapefile'
+Simple feature collection with 22841 features and 21 fields
+Geometry type: POINT
+Dimension:     XY
+Bounding box:  xmin: -93.32911 ymin: 44.89063 xmax: -93.19915 ymax: 45.05112
+Geodetic CRS:  WGS 84</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>police_data <span class="ot">&lt;-</span> police_data <span class="sc">|&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(offense <span class="sc">==</span> <span class="st">"ARSON"</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>police_pal <span class="ot">&lt;-</span><span class="fu">colorFactor</span>(<span class="at">palette =</span> <span class="st">"RdYlBu"</span>, </span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>                           <span class="at">domain =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="co">#glimpse(police_data)</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>police_map <span class="ot">&lt;-</span> police_data <span class="sc">|&gt;</span> </span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">leaflet</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addPolygons</span>(<span class="at">data=</span>city_boundry,<span class="at">weight=</span><span class="dv">5</span>,<span class="at">color =</span> <span class="st">"green"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng =</span> <span class="sc">~</span>centerLong, <span class="at">lat =</span> <span class="sc">~</span>centerLat)<span class="sc">|&gt;</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(<span class="at">lng =</span> <span class="sc">~</span>centerLong, <span class="at">lat =</span> <span class="sc">~</span>centerLat, <span class="at">color =</span> <span class="sc">~</span><span class="fu">police_pal</span>(precinct), <span class="at">fillColor =</span> <span class="sc">~</span><span class="fu">police_pal</span>(precinct), <span class="at">opacity =</span> <span class="dv">1</span>, <span class="at">fillOpacity =</span> <span class="fl">0.7</span>)<span class="sc">|&gt;</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addLegend</span>(<span class="at">pal =</span> police_pal,</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>            <span class="at">values =</span> <span class="sc">~</span>precinct,</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>            <span class="at">opacity =</span> <span class="fl">0.6</span>, <span class="at">title =</span> <span class="st">"Arson in Minneapolis by Precinct:"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in police_pal(precinct): Some values were outside the color scale and
+will be treated as NA</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in police_pal(precinct): Some values were outside the color scale and
+will be treated as NA</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in pal(v): Some values were outside the color scale and will be treated
+as NA</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>police_map</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-67368006c4eefd8b49c6" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-67368006c4eefd8b49c6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addPolygons","args":[[[[{"lng":[-93.3291083651613,-93.32909218560469,-93.329086493879,-93.3290643243561,-93.3290428815703,-93.329022725172,-93.32900030142579,-93.3289045769492,-93.3288466661561,-93.32882970416691,-93.32882153219271,-93.3288249323161,-93.3287973675116,-93.3287565480651,-93.32871198354211,-93.318530971287,-93.3185023967762,-93.3184919799121,-93.31848181727131,-93.318473220394,-93.3184696010818,-93.31843653768939,-93.3184355010336,-93.3184355010336,-93.3184354444397,-93.318435445338,-93.3184344311401,-93.3184812082135,-93.3186217855723,-93.31866254573001,-93.318703095682,-93.3187954972904,-93.3192041454047,-93.31921844209251,-93.3193321337732,-93.3231844977837,-93.3232316782007,-93.3193814512823,-93.3193855574814,-93.3194367875038,-93.3195027382187,-93.31446260017989,-93.3093872634534,-93.2991944024197,-93.2830112714409,-93.2826787052413,-93.2815017918448,-93.2813258343385,-93.2811975135935,-93.2810941552335,-93.2809756395997,-93.28092339088791,-93.28085606305569,-93.2807083611583,-93.2806707630704,-93.2806409120535,-93.28062737713709,-93.2806249786353,-93.2806362596787,-93.28067143411189,-93.2806973630843,-93.280723623535,-93.2807694340212,-93.2808349589347,-93.2809321503602,-93.2810540499476,-93.2811830102932,-93.2813312215353,-93.28149849502771,-93.28269609123529,-93.28283056543999,-93.2829480920287,-93.2830717990264,-93.2831662209459,-93.2832678105231,-93.2833589715581,-93.2834771691883,-93.267675436828,-93.2472728354164,-93.2269272680421,-93.2269173910656,-93.2268838335998,-93.2268757361858,-93.2268673468194,-93.22685080254681,-93.2268418643097,-93.22042548300119,-93.2178794023645,-93.217807409581,-93.2076309176484,-93.2076307784095,-93.20755694946961,-93.20756165754,-93.20762081070311,-93.2076808244523,-93.2076837799096,-93.207743914033,-93.2077550899735,-93.2077226859445,-93.20719941998649,-93.2066901542721,-93.206196326106,-93.2057662459856,-93.2053507958279,-93.2049075185577,-93.2044847525204,-93.2040836978652,-93.20374225900549,-93.2033855577691,-93.2030536985435,-93.2027476227633,-93.2024682017942,-93.2022162315435,-93.2019924288669,-93.2017994905068,-93.20168704119619,-93.2015619166569,-93.2014475727993,-93.2012811131805,-93.2011957893982,-93.20113306453349,-93.2010678836748,-93.20101374580589,-93.2009770792709,-93.2009481157895,-93.20092353159509,-93.2009115399844,-93.2009073367672,-93.20091426457471,-93.20093085825459,-93.200994095159,-93.2010422053324,-93.20107518518139,-93.2010930275196,-93.2010957278553,-93.2010832942735,-93.20105055337631,-93.2010056906127,-93.2009457083046,-93.2008885206553,-93.2007804057159,-93.2006751132831,-93.2005547462216,-93.2004193251925,-93.2002688627723,-93.2000910727028,-93.20034091753951,-93.2004610806835,-93.20056907524869,-93.20077247449019,-93.20093244557771,-93.20108893569351,-93.201207128832,-93.2013165436336,-93.20139285012711,-93.2014494053625,-93.2014894217151,-93.2015024544732,-93.201496760951,-93.2014645159239,-93.2014148615465,-93.2013354091529,-93.2012309970691,-93.20116401598661,-93.2010605821682,-93.20094160120711,-93.2007809491966,-93.2005907462066,-93.2003947113537,-93.200149795573,-93.199876982611,-93.199576967764,-93.1992843442552,-93.1989348735585,-93.1985606524791,-93.1982034975935,-93.19778499316391,-93.1973447279448,-93.1956329019327,-93.1949471361296,-93.19432851939411,-93.19740630566091,-93.1991457225287,-93.2024966199982,-93.2075929701158,-93.20763041010029,-93.2076875887664,-93.2108526274985,-93.2108750692109,-93.2160470404075,-93.2171036406413,-93.21705445248961,-93.219163184737,-93.219171715139,-93.2203142041954,-93.2225257477288,-93.2225192035019,-93.2212754258039,-93.2209551494557,-93.2197443021994,-93.2193801440478,-93.2191560386389,-93.2191475306949,-93.21926403859401,-93.22041344647469,-93.22053289905131,-93.2205343246777,-93.22276752928749,-93.2228171701901,-93.22283161509991,-93.22283190076411,-93.22296556468849,-93.2230924678921,-93.2272850149175,-93.2272859473688,-93.2317179187736,-93.2317240255209,-93.2322886292534,-93.23228999109941,-93.2350688297178,-93.2350589132154,-93.2324948707646,-93.2325078613019,-93.2325573207448,-93.23748465823159,-93.2374854909699,-93.23814652794979,-93.23934916729939,-93.24066165533679,-93.241387376407,-93.2413863047169,-93.24190464431391,-93.2419059172267,-93.242427280553,-93.242428824757,-93.2425322891181,-93.2425335341831,-93.24266280085421,-93.2426452729264,-93.2431414564752,-93.24314533270569,-93.2436951331006,-93.24370223428291,-93.2444517643015,-93.244450130266,-93.2449439260928,-93.2449441533666,-93.24505176345281,-93.24505520400029,-93.2450744611851,-93.2471952569084,-93.2476442636335,-93.24760328877851,-93.2482532567174,-93.2482445861783,-93.2501391295193,-93.25166469345049,-93.25267851141891,-93.2546427065337,-93.2546613366944,-93.25538024134831,-93.25540821758121,-93.2547072873178,-93.2547250200615,-93.2546709980753,-93.2546851133034,-93.2539488657746,-93.25395246532401,-93.2539677384804,-93.2539936548764,-93.2527129582168,-93.2527833528974,-93.25228756281069,-93.25086360732119,-93.25087961979111,-93.26784158652799,-93.2768271432609,-93.28835276461309,-93.29577398882201,-93.3048794490857,-93.3188279677947,-93.3188255207838,-93.31882955062621,-93.3289965563494,-93.329044706947,-93.3291083651613],"lat":[44.9197188612588,44.9250692529956,44.9269523907378,44.9305559701166,44.9323725261461,44.9340804248928,44.9414157082404,44.9457939301056,44.948442545682,44.9520612586939,44.9538057015087,44.9564010581728,44.9617225980936,44.9664600025642,44.9771410020966,44.9771611175225,44.9807457148084,44.9839827350327,44.9871415264711,44.9915557868486,44.9934120295766,45.0060428657414,45.0131606202158,45.0131635814955,45.0135461276182,45.0135490761768,45.0204717225958,45.0222802328092,45.0277151454113,45.0295321976395,45.0313398102647,45.0354582282621,45.0354593836192,45.0364029591524,45.0401926096897,45.0402800895803,45.0428761761171,45.0420162853583,45.0421609485063,45.0439657141443,45.0512462602368,45.051240062377,45.0512335973345,45.051136963045,45.051123461762,45.0511273679576,45.0511411802121,45.0501540417679,45.049271040164,45.0483863963697,45.0470506467169,45.0466447540792,45.046239976254,45.0455296740787,45.0452950079194,45.0450202953361,45.0447843157803,45.0445481518196,45.0442727368299,45.0439581178481,45.0437629590815,45.0433426158381,45.0429287615119,45.0425162428445,45.0420543392091,45.041595387845,45.041190456228,45.04078884277,45.0403910153568,45.0377970485943,45.0375423263172,45.0372966340813,45.0370069501888,45.0367563023319,45.0364444929051,45.0361046424744,45.0354615635622,45.0355383192119,45.0355554013309,45.0356713474514,45.0313449437206,45.0259165916005,45.0240986302889,45.0189223912861,45.0132152612933,45.0132153317848,45.0132591730178,45.0132764135648,45.0060218947565,45.0061312235078,45.0061042479691,44.9915788056123,44.9880727691448,44.9849052329315,44.974759505671,44.9742837805663,44.964607059772,44.9628074076679,44.9530250048773,44.9528486702736,44.9526527661053,44.9524378579733,44.9522286935313,44.9520051098205,44.951740403707,44.9514592878546,44.9511625630625,44.9508828621004,44.9505588408346,44.9502217783762,44.949872625593,44.9495123778712,44.9491420649467,44.9487627356498,44.9483799312328,44.9481053067643,44.9477738139848,44.9474403617019,44.9468807422069,44.9465429409697,44.9462604314184,44.9459203726053,44.9455793383559,44.9452945275128,44.9450092708226,44.9446665208101,44.9443806493393,44.94403746512,44.9436943080973,44.9433726776737,44.942462354421,44.9415515633708,44.9406404310384,44.9397290871261,44.93881765435,44.9379062656081,44.9368648855987,44.9359540102045,44.9350435718679,44.934350766042,44.9332245177531,44.9323161576879,44.9314087422903,44.9305023968929,44.9295972487439,44.9286293269569,44.9276096878834,44.9270650344573,44.9265755021452,44.9255387078741,44.9246151762747,44.9235742797088,44.9226475750193,44.9216036526219,44.9206747305616,44.9197450969595,44.9186986690009,44.9178063860326,44.9167214167142,44.915674852899,44.9147450130801,44.9136997205804,44.9126555376374,44.9122711730586,44.9118471737318,44.9114692164975,44.9110543125912,44.910645765092,44.910284386295,44.9098908260856,44.9095066472394,44.9091328494329,44.9088061055876,44.9084546771405,44.9081163597319,44.9078238136233,44.9075128045616,44.9072173535242,44.906189732582,44.905765060414,44.9053736096153,44.9054104772853,44.9054058135534,44.9053967514058,44.9053916772897,44.9017982011461,44.896236922569,44.8962320321872,44.8934276838411,44.8934198416653,44.8937948158566,44.8959665897828,44.8959693343911,44.8949532215643,44.8949546909388,44.896039672172,44.8968246963458,44.8968231156583,44.8970008962837,44.8969993429639,44.8968206829011,44.8968203927266,44.897833892216,44.8977903559669,44.8972622874099,44.8972074059989,44.8970967648642,44.8970936321395,44.8970741084455,44.8970558326175,44.8970350584921,44.8970353193937,44.8970355707501,44.8970437153331,44.8969285360968,44.8968982014514,44.8954905042184,44.8954872364974,44.8950875931305,44.8950662780184,44.8961781380519,44.8961922091275,44.8969489583612,44.897017473723,44.8969832567784,44.897064757993,44.8970760435702,44.8970916569256,44.8971087752315,44.8971192761875,44.8973619341517,44.8973604756565,44.8972488930288,44.8972468910938,44.8971341876435,44.8971356696891,44.8970826488295,44.8970818540348,44.8976369839202,44.8976301687328,44.897355087751,44.8973487306963,44.8969931786827,44.8969885664483,44.897200448856,44.8971949966648,44.897067820085,44.8970671563772,44.8968213606114,44.8961536523868,44.8961538483841,44.8961538852927,44.8975894704023,44.8975878744636,44.8978659145675,44.8978612788587,44.8978575162027,44.89785500522,44.8978501117941,44.8971840019199,44.8971749034775,44.895537787835,44.8955408067357,44.8949068703839,44.8949072744781,44.8944105762548,44.8944123899216,44.8942523606442,44.893573805342,44.8926043609144,44.8926059398087,44.8907965391766,44.8907963482523,44.8907947603984,44.8907127768045,44.8907145339471,44.8906504023459,44.8905885070413,44.8906436200605,44.8907106257209,44.8908118754875,44.8980009850227,44.9052374226742,44.905308953546,44.9125301873579,44.9197188612588]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"green","weight":5,"opacity":0.5,"fill":true,"fillColor":"green","fillOpacity":0.2,"smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[[44.90631,44.97834,44.95642,44.93234,44.89994,45.00512,44.98804,44.94843,45.0394,44.90585,45.00086,44.9875,45.00599,45.00366,45.00261,44.904235,44.94583,45.04571,45.01045,44.93144,44.95554,44.98531,44.94133,44.96138,44.95464,44.96136,44.96002,44.97157,45.02681,44.96274,44.97586,45.04394,45.014,44.95101,45.02308,44.97893,44.95464,44.95015,45.01492,44.96181,45.00086,44.94497,45.00259,44.97928,45.00149,44.95152,44.96093,44.99229,44.93323,44.94926,45.01956,44.94749,45.00257,44.94068,44.97081,45.03389,44.95554,44.96628,44.94746,44.92332,45.01771,45.01855,44.94837,44.94926,44.94836,45.03391,44.94921,45.00684,44.94836,44.93502,44.94384,44.93322,44.9026,45.00314,44.94565,44.94498,44.94133,44.95464,45.01043,44.99154,44.98016,44.95824,44.97734,44.98413,45.04119,44.94837,44.94748,44.98791,44.96628,44.96458,44.94837,44.95464,45.01956,44.95194,44.93503,45.03796,44.94226,44.94213,45.04571,44.9988,44.94921,44.99415,44.9703,44.96226,44.96695,45.03545,45.02217,44.94749,44.94836,44.95375],[-93.20417,-93.27106999999999,-93.27658,-93.27078,-93.22295,-93.3146,-93.27979000000001,-93.32626,-93.29015,-93.27906,-93.28952,-93.25336,-93.26893,-93.30074999999999,-93.29640000000001,-93.279976,-93.26773,-93.30302,-93.29558,-93.27014,-93.28487,-93.2736,-93.30262,-93.25233,-93.24737,-93.26257,-93.2582,-93.28127000000001,-93.22815,-93.30593,-93.26202000000001,-93.30987,-93.28648,-93.25502,-93.29563,-93.26776,-93.25118000000001,-93.27537,-93.29053999999999,-93.25109,-93.28646999999999,-93.22920999999999,-93.28952,-93.2702,-93.28494000000001,-93.30423999999999,-93.2555,-93.30697000000001,-93.25492,-93.30146000000001,-93.30953,-93.28939,-93.28102,-93.27533,-93.26721000000001,-93.29322999999999,-93.28487,-93.27467,-93.25631,-93.25748,-93.30191000000001,-93.29496,-93.23515,-93.30146000000001,-93.25440999999999,-93.28811,-93.26902,-93.29304999999999,-93.26204,-93.24988,-93.23891999999999,-93.27661999999999,-93.23361,-93.28798999999999,-93.2474,-93.26836,-93.30262,-93.25244000000001,-93.29433,-93.21832999999999,-93.32782,-93.25114000000001,-93.27883,-93.31332999999999,-93.28887,-93.29639,-93.29575,-93.31082000000001,-93.2753,-93.27658,-93.24132,-93.28296,-93.30953,-93.26391,-93.25239999999999,-93.29523,-93.22841,-93.2461,-93.30302,-93.31269,-93.27284,-93.30508,-93.21375999999999,-93.26109,-93.21213,-93.30123,-93.29562,-93.26267,-93.29892,-93.2976],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addCircleMarkers","args":[[44.90631,44.97834,44.95642,44.93234,44.89994,45.00512,44.98804,44.94843,45.0394,44.90585,45.00086,44.9875,45.00599,45.00366,45.00261,44.904235,44.94583,45.04571,45.01045,44.93144,44.95554,44.98531,44.94133,44.96138,44.95464,44.96136,44.96002,44.97157,45.02681,44.96274,44.97586,45.04394,45.014,44.95101,45.02308,44.97893,44.95464,44.95015,45.01492,44.96181,45.00086,44.94497,45.00259,44.97928,45.00149,44.95152,44.96093,44.99229,44.93323,44.94926,45.01956,44.94749,45.00257,44.94068,44.97081,45.03389,44.95554,44.96628,44.94746,44.92332,45.01771,45.01855,44.94837,44.94926,44.94836,45.03391,44.94921,45.00684,44.94836,44.93502,44.94384,44.93322,44.9026,45.00314,44.94565,44.94498,44.94133,44.95464,45.01043,44.99154,44.98016,44.95824,44.97734,44.98413,45.04119,44.94837,44.94748,44.98791,44.96628,44.96458,44.94837,44.95464,45.01956,44.95194,44.93503,45.03796,44.94226,44.94213,45.04571,44.9988,44.94921,44.99415,44.9703,44.96226,44.96695,45.03545,45.02217,44.94749,44.94836,44.95375],[-93.20417,-93.27106999999999,-93.27658,-93.27078,-93.22295,-93.3146,-93.27979000000001,-93.32626,-93.29015,-93.27906,-93.28952,-93.25336,-93.26893,-93.30074999999999,-93.29640000000001,-93.279976,-93.26773,-93.30302,-93.29558,-93.27014,-93.28487,-93.2736,-93.30262,-93.25233,-93.24737,-93.26257,-93.2582,-93.28127000000001,-93.22815,-93.30593,-93.26202000000001,-93.30987,-93.28648,-93.25502,-93.29563,-93.26776,-93.25118000000001,-93.27537,-93.29053999999999,-93.25109,-93.28646999999999,-93.22920999999999,-93.28952,-93.2702,-93.28494000000001,-93.30423999999999,-93.2555,-93.30697000000001,-93.25492,-93.30146000000001,-93.30953,-93.28939,-93.28102,-93.27533,-93.26721000000001,-93.29322999999999,-93.28487,-93.27467,-93.25631,-93.25748,-93.30191000000001,-93.29496,-93.23515,-93.30146000000001,-93.25440999999999,-93.28811,-93.26902,-93.29304999999999,-93.26204,-93.24988,-93.23891999999999,-93.27661999999999,-93.23361,-93.28798999999999,-93.2474,-93.26836,-93.30262,-93.25244000000001,-93.29433,-93.21832999999999,-93.32782,-93.25114000000001,-93.27883,-93.31332999999999,-93.28887,-93.29639,-93.29575,-93.31082000000001,-93.2753,-93.27658,-93.24132,-93.28296,-93.30953,-93.26391,-93.25239999999999,-93.29523,-93.22841,-93.2461,-93.30302,-93.31269,-93.27284,-93.30508,-93.21375999999999,-93.26109,-93.21213,-93.30123,-93.29562,-93.26267,-93.29892,-93.2976],10,null,null,{"interactive":true,"className":"","stroke":true,"color":["#FFFFBF","#D7191C","#2C7BB6","#FFFFBF","#FFFFBF","#ABD9E9","#D7191C","#2C7BB6","#ABD9E9","#2C7BB6","#ABD9E9","#FDAE61","#FDAE61","#ABD9E9","#ABD9E9","#2C7BB6","#FFFFBF","#ABD9E9","#ABD9E9","#FFFFBF","#2C7BB6","#D7191C","#2C7BB6","#FFFFBF","#FFFFBF","#FFFFBF","#FFFFBF","#D7191C","#FDAE61","#2C7BB6","#D7191C","#ABD9E9","#ABD9E9","#FFFFBF","#ABD9E9","#D7191C","#FFFFBF","#FFFFBF","#ABD9E9","#FFFFBF","#ABD9E9","#FFFFBF","#ABD9E9","#D7191C","#ABD9E9","#2C7BB6","#FFFFBF","#ABD9E9","#FFFFBF","#2C7BB6","#ABD9E9","#2C7BB6","#ABD9E9","#2C7BB6","#D7191C","#ABD9E9","#2C7BB6","#2C7BB6","#FFFFBF","#FFFFBF","#ABD9E9","#ABD9E9","#FFFFBF","#2C7BB6","#FFFFBF","#ABD9E9","#FFFFBF","#ABD9E9","#FFFFBF","#FFFFBF","#FFFFBF","#2C7BB6","#FFFFBF","#ABD9E9","#FFFFBF","#FFFFBF","#2C7BB6","#FFFFBF","#ABD9E9","#FDAE61","#808080","#FFFFBF","#D7191C","#ABD9E9","#ABD9E9","#2C7BB6","#2C7BB6","#ABD9E9","#2C7BB6","#2C7BB6","#FFFFBF","#2C7BB6","#ABD9E9","#FFFFBF","#FFFFBF","#ABD9E9","#FFFFBF","#FFFFBF","#ABD9E9","#ABD9E9","#FFFFBF","#ABD9E9","#FDAE61","#FFFFBF","#FDAE61","#ABD9E9","#ABD9E9","#FFFFBF","#2C7BB6","#2C7BB6"],"weight":5,"opacity":1,"fill":true,"fillColor":["#FFFFBF","#D7191C","#2C7BB6","#FFFFBF","#FFFFBF","#ABD9E9","#D7191C","#2C7BB6","#ABD9E9","#2C7BB6","#ABD9E9","#FDAE61","#FDAE61","#ABD9E9","#ABD9E9","#2C7BB6","#FFFFBF","#ABD9E9","#ABD9E9","#FFFFBF","#2C7BB6","#D7191C","#2C7BB6","#FFFFBF","#FFFFBF","#FFFFBF","#FFFFBF","#D7191C","#FDAE61","#2C7BB6","#D7191C","#ABD9E9","#ABD9E9","#FFFFBF","#ABD9E9","#D7191C","#FFFFBF","#FFFFBF","#ABD9E9","#FFFFBF","#ABD9E9","#FFFFBF","#ABD9E9","#D7191C","#ABD9E9","#2C7BB6","#FFFFBF","#ABD9E9","#FFFFBF","#2C7BB6","#ABD9E9","#2C7BB6","#ABD9E9","#2C7BB6","#D7191C","#ABD9E9","#2C7BB6","#2C7BB6","#FFFFBF","#FFFFBF","#ABD9E9","#ABD9E9","#FFFFBF","#2C7BB6","#FFFFBF","#ABD9E9","#FFFFBF","#ABD9E9","#FFFFBF","#FFFFBF","#FFFFBF","#2C7BB6","#FFFFBF","#ABD9E9","#FFFFBF","#FFFFBF","#2C7BB6","#FFFFBF","#ABD9E9","#FDAE61","#808080","#FFFFBF","#D7191C","#ABD9E9","#ABD9E9","#2C7BB6","#2C7BB6","#ABD9E9","#2C7BB6","#2C7BB6","#FFFFBF","#2C7BB6","#ABD9E9","#FFFFBF","#FFFFBF","#ABD9E9","#FFFFBF","#FFFFBF","#ABD9E9","#ABD9E9","#FFFFBF","#ABD9E9","#FDAE61","#FFFFBF","#FDAE61","#ABD9E9","#ABD9E9","#FFFFBF","#2C7BB6","#2C7BB6"],"fillOpacity":0.7},null,null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLegend","args":[{"colors":["#D7191C","#FDAE61","#FFFFBF","#ABD9E9","#2C7BB6","#808080"],"labels":["1","2","3","4","5","UI"],"na_color":null,"na_label":"NA","opacity":0.6,"position":"topright","type":"factor","title":"Arson in Minneapolis by Precinct:","extra":null,"layerId":null,"className":"info legend","group":null}]}],"limits":{"lat":[44.8905885070413,45.0512462602368],"lng":[-93.3291083651613,-93.19432851939411]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

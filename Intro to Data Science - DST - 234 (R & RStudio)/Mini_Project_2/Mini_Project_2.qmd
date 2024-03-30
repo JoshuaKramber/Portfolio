@@ -1,0 +1,60 @@
+---
+title: "Mini_Project_2"
+format: html
+editor: visual
+---
+
+Mini Project 2 Original
+
+```{r}
+library(tidyverse)
+tags <- read_csv("Snow_Emergency_Northrop_Tags_2023.csv")
+tows <- read_csv("Snow_Emergency_Northrop_Tows_2023.csv")
+
+
+
+df1 <- tags |>
+  inner_join(tows,by = "Day")
+
+
+ggplot(data = df1) + geom_point(aes(x = Time,y = Community.y, color = Tow_Zone.x)) + facet_grid(Day ~ .) + labs(title = "Time of Towing in Communities", y = "Community", color = "Tow Zone")
+
+#I thought that it could be interesting to see which communities are getting towed at what time. Then I slowly tried to increase the visibility of that graph. So I added the tow zone coloring and facited it all by the day.
+
+#IDK if there are any good conclusions to come to with this data but I find the gap in the first time section of day 2 to be weird, also that Northeast and Soutwest avoided a day of citations and tows. Guess we gotta find out what their secret is!
+
+```
+
+Mini Project 5 (Updated version of 2)
+
+Unfortunately I couldn't figure out how to add the title, it kept throwing errors in my addlegend :(
+
+```{r}
+library(tidyverse)
+library(sf)     # R wrapper around GDAL/OGR
+library(leaflet)    # for fortifying shapefiles
+library(leaflet.extras)   # For leaflet heatmaps
+library(ggmap)   # Making google maps
+
+city_boundry <- st_read(dsn = "~/DST 234 Files/Mini_Project_2/City_Boundary-shp", layer = "16cdbbfa-ad10-493c-afaf-52b61f2e76e42020329-1-180h9ap.whbo")
+
+neighborhood_boundry <- st_read(dsn = "~/DST 234 Files/Mini_Project_2/Minneapolis_Neighborhoods")
+
+#minimaizing data, so it doesn't take years to run
+df2 <- df1 |> filter(Day==1) |> filter(Ward.x!=0) |> filter(Ward.y!=0)
+
+TagsTowsMap <- df2 |>
+  leaflet() |> 
+  addTiles() |>
+  addPolygons(data=city_boundry,weight=5,color = "black",fill=FALSE) |>
+  addPolygons(data = neighborhood_boundry,weight=1,color = "black",fillColor="black") |>
+  addWebGLHeatmap(lng = ~Longitude.x,lat = ~Latitude.x,size=200,opacity = 0.8)
+  #|> addLegend funtion would go here, to add the title: "Heatmap of Tags and Tows in Minneapolis" and labels: "Black = Area within Minneapolis", "Red = Areas where there was a Tag or a Tow"
+  
+
+TagsTowsMap
+```
+
+I improved my Mini-Project 2 by adding a heat map of the tags and tows to the city of Minneapolis. This is much better than what I previously had because it gives a better idea of where the tags and tows are happening during the snow plow warnings. I went from a very basic ggplot to a solid looking map. It has a border around the city of Minneapolis and each neighborhood. Areas within the city/neighborhoods are shaded black and areas with tags or tows are red!
+
+I was rather disappointed with my original mini-project 2, but this makes me feel much better about it. This was my original idea for this mini-project but I didn't know mapping when this was an assignment! I am just glad that I got to go back and redo my project with my original idea!

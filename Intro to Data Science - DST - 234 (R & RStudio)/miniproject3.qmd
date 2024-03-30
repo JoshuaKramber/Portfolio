@@ -1,0 +1,131 @@
+---
+title: "Miniproject 3"
+format:
+  html:
+    embed-resources: true
+editor: source
+---
+
+For this activity you will be working with two sets of "open data":
+
+-   A dataset of recorded police stops from 2022 from [openDataMinneapolis](https://opendata.minneapolismn.gov/datasets/police-incidents-2022/explore?location=22.525621%2C-46.664551%2C4.06).
+-   A dataset from the of demographic data for different neighborhoods in Minneapolis from [mnCompass](https://www.mncompass.org/profiles/neighborhoods/minneapolis-saint-paul). This is collected from the American Community Survey data from 2017-2021; for the purpose of the activity let's assume it is representative.
+
+Both of these datasets are quite large, but the names of the data columns should be representative of what is represented. You can also link to the police stop data for some more descriptions.
+
+**Your task:** First formulate a question that you would like to ask can be answered when you join these two datasets together. Then design a data graphic you think would best answer this question. I anticipate that you will need to use our R data wrangling verbs, joins, pivoting, and other tools to best produce the graphic. One way to link them is on the neighborhood variable in both (but beware that the names are spelt differently).
+
+My suggestion is that you first narrow the two datasets, and then join (rather than joining right away).
+
+**A note:** I recognize that these datasets embody some of the deep and enduring legacies of racial injustice for Black people. Minneapolis has been at the heart of movements in response to bias, policing, and white supremacy.
+
+The goal of this miniproject (I hope) is for you to recognize that you are not powerless, and open data like these can be used for social justice. However, when working with data such as these, be aware of any biases and priveleges (hidden, implicit, or overt) in the formulation, design, analysis, and conclusions drawn from your data graphic.
+
+### Grade (80 points):
+
+Your grade for this project will include my evaluation of your data graphic, utilizing the design principles provided:
+
+-   5 points: Handed in by the deadline
+-   5 points: [Code of ethics](https://docs.google.com/forms/d/e/1FAIpQLSe4tk3Q5r168rn7XrPjgbQ3GbzbSa-bDvhtcs4FB4VK61EADQ/viewform?usp=sf_link) submitted.
+-   5 points: Your submitted Quarto file compiles cleanly without errors (meaning that all the data and graphics loads accordingly).
+-   10 points: Quarto file is styled nicely (meaning the html file is readable and questions are addressed with proper explanation and justification).
+-   10 points: All data graphics need appropriate, explanatory, and identifiable labels on any axes or aesthetics and a title.
+-   30 points: the data graphic has at least 2 layers, answers/provides insight to the question you ultimately decide to pursue (be sure to explain your question and how your data graphic provides insight and meaningful comparisons).
+-   20 points: Your code includes the data verbs and wrangling from Chapters 4-6, **including nesting and inference.**
+-   (Extra 5 points): Pizaaz. Do I find your data graphic intriguing?
+
+## Pulling in the data
+
+Let's pull in the data set:
+
+```{r, echo=TRUE,message=FALSE,warning=FALSE}
+library(broom)
+library(tidyverse)
+
+### Police Stop Data from previous years are also available - see me for how to do this
+
+# Load in the lake data into the workspace:
+police_data <- read_csv("https://raw.githubusercontent.com/jmzobitz/DST234Datasets/master/Police_Incidents_2022.csv")
+
+# Location of the excel file:
+url <- "https://www.mncompass.org/sites/default/files/Minneapolis-St.Paul_Neighborhoods_2017-2021.xlsx"
+
+# Name of the file to save:
+destfile <- "Minneapolis_St_Paul_Neighborhoods_2017_2021.xlsx"
+
+# Download
+curl::curl_download(url, destfile)
+neighborhood_data <- readxl::read_excel(destfile)
+
+
+
+```
+
+Now let's see the names of the columns (to save space I am not printing them at the moment, but you can see them if you change the code chunk to `eval=TRUE`).
+
+```{r eval=FALSE}
+names(police_data)
+
+names(neighborhood_data)
+
+```
+
+### Task 1: Describe the question you investigating from the data:
+INCLUDE RESPONSE HERE
+Male vs total pop: of bike thefts and faceted by precinct
+### Task 2: Identify variables (columns) you will need to utilize from both datasets:
+INCLUDE RESPONSE HERE
+Neighborhood data: Neightborhood, male, male share, female, female share, white, white share
+police data: neightborhood, offense, precinct
+### Task 2+: Do your data wrangling thing!
+- You may need to do some wrangling of the data, which could include converting columns from a string.
+- The data frame `neighborhood_data` includes data from both Minneapolis and St. Paul, so you will need to account for that (hint: think joins)
+
+```{r}
+n_data <- select(neighborhood_data,"Neighborhood","Male","Male - Share","Female","Female - Share","White")
+
+p_data <- select(police_data,"neighborhood","offense","description","precinct") |> rename("Neighborhood" = "neighborhood")
+
+t_data <- n_data |> inner_join(p_data, by = "Neighborhood") |> 
+  filter(offense == "BIKETF") |>
+  transform(Male = as.numeric(Male),`Male - Share`= as.numeric(`Male - Share`),Female = as.numeric(Female),`Female - Share` = as.numeric(`Female - Share`),precinct = as.numeric(precinct)) |> distinct() |> mutate("Total" = (Male + Female))
+
+lmfit <- lm(Male ~ Total, data = t_data)
+
+df1 <- t_data |>
+  arrange(precinct) |>
+  group_by(precinct) |>
+  nest()
+
+df2 <- df1 |>
+  mutate(lmfit = map(.x=data,
+                     .f=~lm(Male~Total, data = .x)
+                     )
+         )
+
+df3 <- df2 |>
+  mutate(tidy_vals = map(.x=lmfit,.f=tidy)
+         )
+
+df4 <- df3 |>
+  select(tidy_vals) |>
+  unnest(cols = c(tidy_vals)) |>
+  filter(p.value <=0.01 | p.value <= 0.05)
+
+df4 |> ggplot(aes(x=precinct,y=p.value)) + 
+  geom_point() + 
+  labs(title = "Significant P Values by Precinct",
+       x="Precinct",
+       y="P Values")
+
+
+t_data |> ggplot(aes(x=Male,y=Total)) + 
+  facet_wrap(vars(precinct)) + 
+  geom_point() + 
+  geom_smooth(method="lm",se=FALSE) +
+  labs(title = "Bike Thefts Commited by Males vs Total Population",
+       subtitle = "Split by Precinct",
+       x="White Male Population",
+       y="Total White Population")
+```
+

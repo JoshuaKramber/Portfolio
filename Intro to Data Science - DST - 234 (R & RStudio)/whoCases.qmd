@@ -1,0 +1,43 @@
+---
+title: "who"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+glimpse(who)
+
+who1 <- who |> pivot_longer(cols = new_sp_m014:newrel_f65, names_to = "code", values_to="cases",values_drop_na=TRUE)
+
+who1 |> count(code)
+
+who2 <- who1 |> mutate(code=stringr::str_replace(code,"newrel","new_rel"))
+glimpse(who2)
+
+who3 <- who2 |> separate(code,c("new","type","sexage"),sep = "_")
+glimpse(who3)
+
+who3 |> count(new)
+
+who4 <- who3 |> select(-new,-iso2,-iso3)
+
+who5 <- who4 |> separate(sexage,c("sex","age"),sep=1)
+who5
+
+who6 <- who |>
+   pivot_longer(cols = new_sp_m014:newrel_f65, names_to = "code", values_to = "cases", values_drop_na = TRUE) |> 
+  mutate(code = stringr::str_replace(code, "newrel", "new_rel")) |>
+  separate(code, c("new", "var", "sexage"), sep = "_") |> 
+  select(-new, -iso2, -iso3) |> 
+  separate(sexage, c("sex", "age"), sep = 1)
+
+
+NumCases <- who6 |> select(country,year,sex,cases) |> group_by(year) |> summarise(totCases = sum(cases))
+
+ggplot(NumCases) + geom_point(aes(x=year,y=totCases))
+```
+
+1.  I get a warning message about pieces missing with 'NA', the table looks normal but it is missing some column information because we don't at the underscore.
+2.  When I removed the iso2 and iso3 from the -selection, I saw that they were just abbreviations of the country's name
+3.  

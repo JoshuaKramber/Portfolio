@@ -1,0 +1,71 @@
+---
+title: "Homework 15"
+format: html
+editor: visual
+---
+
+Question 1: I think that enframing sounds very interesting. IDK how I would use it currently but I think I can keep it in the back of my mind for future reference
+
+Nesting seems super important for operating and keeping a clean data set. I have a feeling that for the remainder of the class, we will do lots of nesting.
+
+Question 2:
+
+I feel like anything to do with predictions can be used as a WMD, because you could use negative incoding to see how much you can exploit someone in say house or car sales
+
+Question 3:
+
+```{r}
+library(tidyverse)
+library(broom)
+
+df1 <- mpg |> ggplot(aes(x=displ,y=hwy,color=as.factor(class))) + 
+  geom_point() + 
+  geom_smooth(method="lm",se=FALSE) +
+  labs(title="Highway MPG vs Engine Displacement for Car Classes",
+       x="Engine Displacement",
+       y="Highway MPG",
+       color="Car Class Regression Lines")
+
+#Question:4
+
+df1
+
+lmfit <- lm(displ ~ hwy, data = mpg)
+
+df2 <- mpg |>
+  group_by(class) |>
+  nest()
+
+df3 <- df2 |>
+  mutate(lmfit = map(.x=data,
+                     .f=~lm(displ~hwy, data = .x)
+                     )
+         )
+
+df4 <- df3 |>
+  mutate(tidy_vals = map(.x=lmfit,.f=tidy)
+         )
+
+df5 <- df4 |>
+  select(tidy_vals) |>
+  unnest(cols = c(tidy_vals))
+
+df6 <- df5 |> filter(p.value <=0.01 | p.value <= 0.05) |> filter(term == "hwy")
+
+df6 |> ggplot(aes(x=class,y=p.value)) + 
+  geom_point() +
+  labs(title = "Class vs P Values",subtitle = "Only significant values shown")
+
+df7 <- mpg |> inner_join(df6, by = "class")
+
+df7 |> ggplot(aes(x=displ,y=hwy,color = as.factor(class),shape=as.factor(p.value))) + geom_point() + 
+  geom_smooth(method="lm",se=FALSE) +
+  labs(title="Highway MPG vs Engine Displacement for Car Classes",
+       x="Engine Displacement",
+       y="Highway MPG",
+       color="Car Class Regression Lines",
+       shape="Significant P Values")
+
+```
+
+df7 is as close as I can get to what I think question 4 was asking for. I apologize if it's totally the wrong thing or if I misunderstood the question. I really struggled to find a way to overlay the p values onto the existing ggplot..... Would you be able to show me what this graph is supposed to look like and where I potentially went wrong? (obviously after it's graded)

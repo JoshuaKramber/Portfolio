@@ -1,0 +1,59 @@
+---
+title: "homework12"
+format: html
+editor: visual
+---
+
+Question 1: 3-4 interesting things in the readings
+
+1.  I didn't know that there were multiple ways to remove the nulls since we have only done the rm.na = TRUE method, where in the reading they show values_drop_na = TRUE
+
+2.  I really like the demonstration of Figure 6.7 for combining/simplifying the columns with names_to and .value
+
+3.  I found the parentheses (2.2.2) section to be interesting. Mainly because I feel totally called out with the good vs bad example of spaces with if statements
+
+    \# Good
+
+    if (debug) {
+
+    show(x)
+
+    }
+
+    \# Bad
+
+    if(debug){ (I always do my if statements the bad way hahaha
+
+    show(x)
+
+    }
+
+4.  This isn't necessarily a specific thing but on the style guide page 9, error messages. I really like looking through this because I always get lots of errors and this can help me
+
+Question 2:
+
+```{r}
+library(tidyverse)
+select(filter(mtcars,cyl==4),mpg,cyl)
+```
+
+I much prefer pipes, it is just easier to understand and implement. Using pipes feels more forgiving.
+
+Question 3:
+
+```{r}
+exer6 <- tibble( grp = c("A","A","B","B"),
+sex = c("F","M","F","M"),
+meanL = c(0.225,0.47,0.325,0.547),
+sdL = c(0.106,0.325,0.106,0.308),
+ meanR = c(0.34,0.57,0.4,0.647),
+sdR = c(0.0849,0.325,0.0707,0.274) )
+
+
+
+wide <- exer6 |>
+  pivot_longer(cols = -c(grp, sex), names_to = "variable", values_to = "value") |>
+  unite("new_variable", c(sex, variable), sep = ".") |> 
+  pivot_wider(names_from = new_variable, values_from = value)
+
+```

@@ -1,0 +1,68 @@
+---
+title: "DST-234 Homework day 8"
+format: html
+editor: visual
+---
+
+## Quarto
+
+```{r}
+glimpse(babynames)
+```
+
+Problem 1a: Probably used the filter commands to remove prop
+
+Problem 1b: Looks like they used another filter command to remove any male names
+
+Problem 1c: I think they used mutate to add total. Or they could've used summarize to add total
+
+Problem 1d: Seems like they used Arrange to sort the rows in ascending order
+
+Problem 2a: doesn't look like anything is wrong, just uses the old pipeline operator
+
+Problem 2b: Looks like they messed up in the parenthesis. They are subtracting year from nothing which shouldn't work
+
+Problem 2c: looks correct
+
+Problem 2d: Didn't use parenthesis around "sex == M" and also selected -prop which I don't think you can subtract something from nothing
+
+Problem 2e: Looks right, I don't know the syntax great but it might get angry by selecting the same column twice
+
+Problem 2f: Looks good
+
+Problem 2g: Looks good
+
+Problem 4a:
+
+```{r}
+
+df1 <-Teams |> select(H,AB) |>  mutate(BA=AB-H)
+```
+
+Problem 4b:
+
+```{r}
+df2 <- Teams |> mutate(SLG = (H + X2B + 2 * X3B + 3 * HR)/AB) |> select(SLG)
+```
+
+Problem 4c:
+
+```{r}
+df3 <- Teams |> mutate(SLG = (H + X2B + 2 * X3B + 3 * HR)/AB)
+ggplot(data = df3) + geom_smooth(aes(x=yearID,y=SLG))
+```
+
+Problem 4d:
+
+```{r}
+df4 <-Teams |>  mutate(BA=AB-H)
+ggplot(data = df4) + geom_smooth(aes(x=yearID,y=BA))
+```
+
+Problem 7:
+
+```{r}
+#I didn't fully understand what you were asking for on the doc, so I tried to re-create the plot on the doc
+df3 <- Teams |> mutate(SLG = (H + X2B + 2 * X3B + 3 * HR)/AB)
+ggplot(data = df3) + geom_point(aes(x=yearID,y=SLG)) + geom_smooth(aes(x=yearID,y=SLG))
+```

@@ -1,0 +1,60 @@
+---
+title: "Homework10"
+format: html
+editor: visual
+---
+
+Question 2: Problem 5.5.1
+
+```{r}
+library(tibble)
+library(tidyverse)
+library(Lahman)
+library(ggrepel)
+
+statenames <- tibble(names = state.name, twoletter = state.abb)
+statedata <- tibble(names = state.name, income = state.x77[, 2],
+                     illiteracy = state.x77[, 3])
+
+
+ggplot(statedata) + geom_point(aes(x=income,y=illiteracy)) + geom_text_repel(aes(x=income,y=illiteracy,label = names)) + geom_smooth(aes(x=income,y=illiteracy)) + labs(title = "State income vs Illiteracy")
+```
+
+Question 3: Problem 5.5.2
+
+```{r}
+library(tibble)
+library(tidyverse)
+library(Lahman)
+library(ggrepel)
+
+#Sorry I know this is probably super sloppy/inefficent but it works and I spent forever working on this
+
+#a.
+THR <- Batting |> group_by(playerID) |>
+    summarise(TotalHomeRuns = sum(HR))
+
+TSB <- Batting |> group_by(playerID) |> summarise(TotalStolenBases = sum(SB))
+
+df1 <- Batting |> inner_join(THR, by = "playerID") |>
+  inner_join(TSB, by = "playerID") |> inner_join(People, by = "playerID") |>
+  select(nameGiven,TotalStolenBases,TotalHomeRuns) |>
+  filter(TotalStolenBases>=300, TotalHomeRuns>=300) |> distinct()
+
+#b.
+
+TW <- Pitching |> inner_join(People, by = "playerID") |>
+  group_by(playerID) |> summarise(TotalWins = sum(W))
+
+TSO <- Pitching |> inner_join(People, by = "playerID") |>
+  group_by(playerID) |> summarise(TotalStrikeOuts = sum(SO))
+
+df2 <- Pitching |> inner_join(TW, by = "playerID") |>
+  inner_join(TSO, by = "playerID") |> inner_join(People, by = "playerID") |>
+  select(nameGiven,TotalWins,TotalStrikeOuts) |>
+  filter(TotalWins>=300, TotalStrikeOuts>=3000) |> distinct()
+
+#c.
+HRS <- Batting |> inner_join(People,by="playerID") |> mutate(BA=AB-H) |>
+  select(nameGiven,HR,yearID,BA) |> filter(HR>=50) |> arrange(BA) |> head(1)
+```

@@ -1,0 +1,30 @@
+---
+title: "Mini-Project"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+library(tidyverse)
+
+richmondway <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-09-26/richmondway.csv')
+
+ggplot(data = richmondway) + geom_point(aes(x = (max(Episode) + 1 * Season + Episode), y = F_count_RK, color = Season)) + labs(title = "Ted Lasso F* Bombs per Episode") + ylab("Roy Kent F**k count") + xlab("Seasons and Episodes")
+
+
+#Link to the github for another project that I thought was really cool but wouldn't know how to reproduce it https://github.com/rfordatascience/tidytuesday/blob/master/data/2023/2023-09-19/pic1.png
+
+#Link to the github for the data https://gist.github.com/zjuul/14bcbcc259429a52e8f87042d004a34c
+
+# I chose this graph because I thought it was funny and would be on the easier side to reproduce. I changed the color to be equal to the season because then we can see which seasons/episodes he says the most F Bombs
+```
+
+sables the printing of code (only output is displayed).

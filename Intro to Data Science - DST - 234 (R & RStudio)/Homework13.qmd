@@ -1,0 +1,66 @@
+---
+title: "Homework13"
+format: html
+editor: visual
+---
+
+## 
+
+Question 1: I was really surprised and intrigued about the section with the teacher and standardized testing. How the teacher was considered a good teacher by both parents and students but because of some wacky algorithm she was received a "miserable IMPACT evaluation".
+
+Question 2: The messy dataset that I found was the "Climate Weather Surface of Brazil - Hourly" [Link](https://www.kaggle.com/datasets/PROPPG-PPG/hourly-weather-surface-brazil-southeast-region/data) I think that this data is messy because there isn't a ton of explaination of the columns, there are missing values and sparse records for certain years
+
+Question 3: (I took and modified the code from the in class stuff to make mine work, hope this is close enough to the examples)
+
+```{r}
+library(tidyverse)
+library(lubridate)
+
+climate_data <- read_csv('https://raw.githubusercontent.com/jmzobitz/DST234Datasets/master/MSP-snow.csv')
+# First we need to fix the date - I have two columns: Date and long_date
+climate_data_new <- climate_data |>
+  mutate(Date = mdy(Date))
+
+# Getting date components
+lubridate::year(climate_data_new$Date)  # Pulls out the year
+lubridate::month(climate_data_new$Date) # Pulls out the month
+lubridate::yday(climate_data_new$Date)  # Pulls out the day of the year
+
+# Let's do some tasks:
+#  (1) Compute the total annual precipitation and snow.
+#  (2) Plot the interannual variation of each measurement.
+
+# First, let's make sure the quantitative data are not strings - we will replace "T" with 0
+climate_revised <- climate_data_new |>
+  mutate(across(.cols=c("Precipitation (inches)":"Snow Depth (inches)"),
+                .fns=~str_replace_all(.x,pattern="T",replacement="0"))) |>  # Replace T w/ 0
+  mutate(across(.cols=c("Precipitation (inches)":"Snow Depth (inches)"),
+                .fns=~as.numeric(.x)))  # Make these columns numeric
+
+# NOTE: sometimes you may introduce NAs with as.numeric().  Not a problem necessarily, unless you are doing aggregate calculations (which we are here).  I recommend just setting NA as 0 (but be cautious that doesn't bias your analysis)
+
+# Looks like we have some NAs - since we will be computing the annual sum, we need to remove them
+climate_revised_no_na <- climate_revised |>
+  mutate(across(.cols=c("Precipitation (inches)":"Snow Depth (inches)"),
+                .fns=~if_else(is.na(.x),0,.x)))
+
+
+# Task (1): Compute the total annual precipitation and snow.
+climate_annual_precip <- climate_revised_no_na |>
+  mutate(year = as.factor(year(Date)),  # We need to get the year - I am making it a factor variable
+         jday = yday(Date)) |>
+  group_by(year=2019) |>
+  mutate(across(.cols=c("Precipitation (inches)":"Snow (inches)"),
+                .fns=~cummax(.x))) |> arrange(`Precipitation (inches)`) |>
+  ungroup()
+
+# Task (2): Plot the interannual variation of each measurement.
+climate_annual_precip |>  # We are going to pivot so we can do a facet_grid
+  pivot_longer(cols=c("Minimum Temperature degrees (F)":"Snow (inches)"),
+               names_to = "measurement",
+               values_to = "value") |>
+  ggplot(aes(x=jday,y=value)) +
+  geom_smooth(se=FALSE) +
+  facet_grid(measurement~.,scales="free_y",switch = "both")
+
+```

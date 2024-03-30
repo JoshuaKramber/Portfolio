@@ -1,0 +1,45 @@
+---
+title: "Mini Project 4"
+format: html
+editor: visual
+---
+
+## Mini Project 4
+
+I chose to explore where arson charges happened in Minneapolis. So I put the area of Minneapolis on the map and then placed the arson events on that map. I don't think this solves anything though, besides being a cool and fun graphic!
+
+```{r}
+library(tidyverse)
+library(sf)     # R wrapper around GDAL/OGR
+library(leaflet)    # for fortifying shapefiles
+library(leaflet.extras)   # For leaflet heatmaps
+library(ggmap)   # Making google maps
+
+city_boundry <- st_read(dsn = "~/DST 234 Files/City_Boundary-shp", layer = "16cdbbfa-ad10-493c-afaf-52b61f2e76e42020329-1-180h9ap.whbo")
+
+
+
+police_data <- mn_1937 <- st_read(dsn = "~/DST 234 Files/Police_Incidents_2023", layer = "Police_Incidents_2023")
+
+police_data <- police_data |>
+  filter(offense == "ARSON")
+
+police_pal <-colorFactor(palette = "RdYlBu", 
+                           domain = c(1,2,3,4,5)
+)
+#glimpse(police_data)
+
+police_map <- police_data |> 
+  leaflet() |> 
+  addTiles() |> 
+  addPolygons(data=city_boundry,weight=5,color = "green") |>
+  addMarkers(lng = ~centerLong, lat = ~centerLat)|>
+  addCircleMarkers(lng = ~centerLong, lat = ~centerLat, color = ~police_pal(precinct), fillColor = ~police_pal(precinct), opacity = 1, fillOpacity = 0.7)|>
+  addLegend(pal = police_pal,
+            values = ~precinct,
+            opacity = 0.6, title = "Arson in Minneapolis by Precinct:")
+
+  
+police_map
+
+```

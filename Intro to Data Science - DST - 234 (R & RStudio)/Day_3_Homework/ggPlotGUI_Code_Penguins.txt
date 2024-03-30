@@ -1,0 +1,30 @@
+## You can use the below code to generate the graph.
+## Don't forget to replace the 'df' with the name
+## of your dataframe
+
+# You need the following package(s):
+library("ggplot2")
+
+# The code below will generate the graph:
+graph <- ggplot(df, aes(x = body_mass_g, y = bill_length_mm, colour = island)) +
+  geom_point() +
+  facet_grid( species ~ sex ) +
+  labs(x = 'Body Mass in g', y = 'Bill Length in mm') +
+  ggtitle('Bill Length vs Body mass by Sex and Island for Penguins')+
+  labs(colour = 'Island') +
+  theme_bw() +
+  theme(
+    axis.title = element_text(size = 13),
+    axis.text = element_text(size = 10),
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = 'right'
+  )
+graph
+
+# If you want the plot to be interactive,
+# you need the following package(s):
+library("plotly")
+ggplotly(graph)
+
+# If you would like to save your graph, you can use:
+ggsave('my_graph.pdf', graph, width = 14, height = 14, units = 'cm')

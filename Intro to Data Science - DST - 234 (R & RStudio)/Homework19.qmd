@@ -1,0 +1,62 @@
+---
+title: "Homework19"
+format: html
+editor: visual
+---
+
+## Joshua L. Kramber - November 7th, 2023 - DST_234 - Homework 19
+
+```{r}
+library(tidyverse)
+library(maps)
+library(mapdata)
+
+cities <- us.cities |>
+  data.frame()
+```
+
+Question 1a: The variables in this data frame are:
+
+name: has the name of the city plus the abbreviation of the state name
+
+country.etc: abbreviation of the state name
+
+pop: the population of the cities from 2006
+
+lat & long: global coordinates of the city
+
+capital: if the value is 2, the city is a capital. If it is 0, then it's not
+
+Question 1b & c:
+
+```{r}
+MNWI <- cities |> filter(country.etc == "WI" | country.etc == "MN")
+
+counties <- map_data("county", region=c('minnesota','wisconsin'))
+
+ggplot(data = counties) + geom_polygon(aes(x = long, y = lat, group = group),fill = "white", color = "black") +
+  coord_fixed(1.3) +
+  guides(fill="none") + geom_point(data=MNWI,aes(x=long,y=lat,size=pop,color=country.etc)) + labs(title="Cities in MN and WI", x = "Latitude", y = "Longitude",size = "Population", color = "State")
+```
+
+Question 2:
+
+```{r}
+states <- map_data("state")
+
+state_x77_df <- state.x77 |>
+  data.frame() |> 
+  rownames_to_column(var="state") |>
+  mutate(state=str_to_lower(state))
+
+states_joined <- inner_join(states,state_x77_df,by=c("region"="state")) |>
+  filter(region=="minnesota"|region=="wisconsin"|region=="north dakota"|region=="south dakota"|region=="iowa")
+
+
+ggplot(data = states_joined) + geom_polygon(aes(x = long, y = lat, fill = Population, group = group), color = "black") +
+  coord_fixed(1.3) + labs(title="MN, WI, SD, ND, IA Population in 1977", x = "Latitude",y="Longitude")
+```
+
+Question 3:
+
+No questions, I appreciate the correction of my title for the mini project 3 though! That was a tough one to put together for me!
